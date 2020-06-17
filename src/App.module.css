@@ -1,0 +1,16 @@
+@font-face {
+  font-family: Din;
+  src: url(/font/DINPro.ttf);
+}
+
+* {
+  --light-blue: #25C1E8;
+  --dark-blue: #4E7093;
+  --gray-blue: #668097;
+  --light-yellow: #FFC858;
+  --pastel-pink: #F59297;
+  font-family: Din, 'Times New Roman', Times, serif;
+  color: var(--gray-blue);
+  font-weight: bolder;
+  font-size: 16px;
+}
