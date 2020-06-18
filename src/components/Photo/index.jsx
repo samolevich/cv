@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import style from './index.module.css'
 
 export default () => {
   const [ photo, setPhoto ] = useState('img/wink.svg');
@@ -8,9 +9,10 @@ export default () => {
       const url = 'https://api.github.com/users/samolevich';
       fetch(url)
         .then(res => res.json())
-        .then(data => setPhoto(data.avatar_url));
+        .then(data => setPhoto(data.avatar_url))
+        .catch(err => console.log('Something is not working as expected =>', err));
     }, 2048)
   }, []);
 
-  return <img className='photo' src={ photo } alt='my face' />
+  return <img className={style.photo} src={ photo } alt='my face' />
 }

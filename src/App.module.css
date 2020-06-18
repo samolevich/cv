@@ -21,17 +21,36 @@
   grid-template-rows: 100vh;
 }
 .content {
-  background-color: var(--light-yellow);
   display: grid;
-  grid-template-columns: 250px auto;
+  /* background-color: var(--pastel-pink); */
+  grid-template-columns: 256px auto;
 }
 
 .bar {
-  background-color: var(--gray-blue);
-  color: white;
+  /* color: var(--dark-blue); */
 }
 
 .info {
-  background-color: var(--dark-blue);
-  color: white;
+  /* color: var(--dark-blue); */
 }
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--light-blue);
+}
+
+/* @media(max-width: 767px) {
+  .main {
+    display: grid;
+    grid-template-columns: 0 auto 0;
+    grid-template-rows: 100vh;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 42px auto;
+  }
+  
+} */

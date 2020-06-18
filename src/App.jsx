@@ -1,6 +1,7 @@
 import React from 'react';
-import Photo from './components/Photo';
 import style from './App.module.css';
+import Bar from './components/Bar';
+import Info from './components/Info';
 
 const App = () => {
   return (
@@ -8,9 +9,11 @@ const App = () => {
       <div></div>
       <div className={style.content}>
         <div className={style.bar}>
-          <Photo />
+          <Bar />
         </div>
-        <div className={style.info}>info</div>
+        <div className={style.info}>
+          <Info />
+        </div>
       </div>
       <div></div>
     </div>
