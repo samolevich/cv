@@ -28,11 +28,12 @@
 
 .bar {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: minmax(250px, 300px) auto minmax(200px, 300px);
+  align-self: start;
 }
 
 .info {
-  /* color: var(--dark-blue); */
+  /* background-color: var(--pastel-pink); */
 }
 
 a:link,
@@ -42,6 +43,9 @@ a:active {
   color: var(--light-blue);
 }
 
+.logo {
+  width: 200px;
+}
 /* @media(max-width: 767px) {
   .main {
     display: grid;

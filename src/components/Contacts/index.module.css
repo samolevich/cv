@@ -2,3 +2,8 @@
   text-decoration: none;
   padding: 20px;
 }
+
+.logo {
+  width: 42px;
+  vertical-align: baseline;
+}
