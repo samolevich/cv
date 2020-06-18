@@ -1,4 +1,5 @@
 import React from 'react';
+import Photo from './components/Photo';
 import style from './App.module.css';
 
 const App = () => {
@@ -6,7 +7,9 @@ const App = () => {
     <div className={style.main}>
       <div></div>
       <div className={style.content}>
-        <div className={style.bar}>bar</div>
+        <div className={style.bar}>
+          <Photo />
+        </div>
         <div className={style.info}>info</div>
       </div>
       <div></div>
