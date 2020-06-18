@@ -13,11 +13,25 @@
   color: var(--dark-blue);
   font-weight: bolder;
   font-size: 16px;
-  display: grid;
-  grid-template-columns: 19% minmax(768px, auto) 19%;
-  grid-template-rows: 1fr;
 }
 
+.main {
+  display: grid;
+  grid-template-columns: 19% minmax(768px, auto) 19%;
+  grid-template-rows: 100vh;
+}
 .content {
   background-color: var(--light-yellow);
+  display: grid;
+  grid-template-columns: 250px auto;
+}
+
+.bar {
+  background-color: var(--gray-blue);
+  color: white;
+}
+
+.info {
+  background-color: var(--dark-blue);
+  color: white;
 }
