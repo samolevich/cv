@@ -30,11 +30,6 @@ export default () => {
           <img className={style.logo} src='img/expirience.svg' alt='expirience' /> Опыт
         </NavLink>
       </li>
-      <li className={style.list}>
-        <NavLink to='/education'>
-          <img className={style.logo} src='img/education.svg' alt='education' /> Образование
-        </NavLink>
-      </li>
     </nav>
   );
 };
