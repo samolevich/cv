@@ -6,22 +6,34 @@ export default () => {
   return (
     <nav>
       <li className={style.list}>
-        <NavLink to='/about'>Обо мне</NavLink>
+        <NavLink to='/about'>
+          <img className={style.logo} src='img/about.svg' alt='about' /> Обо мне
+        </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='/projects'>Проекты</NavLink>
+        <NavLink to='/projects'>
+          <img className={style.logo} src='img/projects.svg' alt='projects' /> Проекты
+        </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='/skills'>Навыки</NavLink>
+        <NavLink to='/skills'>
+          <img className={style.logo} src='img/skills.svg' alt='skills' /> Навыки
+        </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='/certificates'>Сертификаты</NavLink>
+        <NavLink to='/certificates'>
+          <img className={style.logo} src='img/certificate.svg' alt='certificate' /> Сертификаты
+        </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='/expirience'>Опыт</NavLink>
+        <NavLink to='/expirience'>
+          <img className={style.logo} src='img/expirience.svg' alt='expirience' /> Опыт
+        </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='/education'>Образование</NavLink>
+        <NavLink to='/education'>
+          <img className={style.logo} src='img/education.svg' alt='education' /> Образование
+        </NavLink>
       </li>
     </nav>
   );

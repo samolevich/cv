@@ -7,7 +7,7 @@
   --light-blue: #25C1E8;
   --dark-blue: #4E7093;
   --gray-blue: #668097;
-  --light-yellow: #FFC858;
+  --light-yellow: #ffdb94;
   --pastel-pink: #F59297;
   font-family: Din, 'Times New Roman', Times, serif;
   color: var(--dark-blue);
@@ -29,6 +29,7 @@
 .bar {
   display: grid;
   grid-template-rows: 250px 3fr 100px minmax(200px, 300px);
+  /* background-color: var(--light-yellow); */
   /* align-self: end; */
 }
 
