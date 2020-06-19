@@ -1,7 +1,10 @@
 ul {
   list-style: none;
   text-transform: none;
+}
 
+.skill {
+  padding: 10px;
 }
 
 .logo {

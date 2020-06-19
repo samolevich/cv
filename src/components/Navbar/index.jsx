@@ -6,7 +6,7 @@ export default () => {
   return (
     <nav>
       <li className={style.list}>
-        <NavLink to='/about'>
+        <NavLink to='/'>
           <img className={style.logo} src='img/about.svg' alt='about' /> Обо мне
         </NavLink>
       </li>
@@ -16,13 +16,13 @@ export default () => {
         </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='/skills'>
-          <img className={style.logo} src='img/skills.svg' alt='skills' /> Навыки
+        <NavLink to='/certificates'>
+          <img className={style.logo} src='img/certificate.svg' alt='certificate' /> Сертификаты
         </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='/certificates'>
-          <img className={style.logo} src='img/certificate.svg' alt='certificate' /> Сертификаты
+        <NavLink to='/skills'>
+          <img className={style.logo} src='img/skills.svg' alt='skills' /> Навыки
         </NavLink>
       </li>
       <li className={style.list}>

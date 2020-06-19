@@ -33,8 +33,15 @@
   /* align-self: end; */
 }
 
+
 .info {
+  margin: 20px;
+}
+
+.info p{
   /* background-color: var(--pastel-pink); */
+  color: var(--gray-blue);
+
 }
 
 a:link,
