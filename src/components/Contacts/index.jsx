@@ -41,7 +41,7 @@ export default () => {
         <br />
         <a
           className={style.contacts}
-          href='http://'
+          href='https://www.freecodecamp.org/fcca8ff6e25-52f4-4953-9dd1-5338e016a242'
           target='_blank'
           rel='noopener noreferrer'
         >
