@@ -60,7 +60,7 @@ export default props => {
         В среднесрочных планах изучить Python, затем Django.
         <br />В планах на долгую перспективу изучить Go, C/C++.
       </p>
-      
+
       <h2>
         <img className={style.logo} src='img/education.svg' alt='education' />{' '}
         Образование

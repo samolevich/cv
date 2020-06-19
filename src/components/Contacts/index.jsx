@@ -4,10 +4,59 @@ import style from './index.module.css';
 export default () => {
   return (
     <div>
-      <h2><img className={style.logo} src="img/contacts.svg" alt=""/> Контакты</h2>
-      <p><a className={style.contacts} href="mailto:samolevich@gmail.com">samolevich@gmail.com</a></p>
-      <p><a className={style.contacts} href="tel:+79263248737">+7926 324 87 37</a></p>
-      <p><a className={style.contacts} href="https://t.me/samolevich">Telegram me</a></p>
+      <h2>
+        <img className={style.logo} src='img/contacts.svg' alt='' /> Контакты
+      </h2>
+      <p>
+        <a className={style.contacts} href='mailto:samolevich@gmail.com'>
+          samolevich@gmail.com
+        </a>
+        <br />
+        <a className={style.contacts} href='tel:+79263248737'>
+          +7926 324 87 37
+        </a>
+        <br />
+        <a className={style.contacts} href='https://t.me/samolevich'>
+          Telegram me
+        </a>
+        <br />
+        <br />
+        <a
+          className={style.contacts}
+          href='https://github.com/samolevich'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Github profile
+        </a>
+        <br />
+        <a
+          className={style.contacts}
+          href='https://www.codewars.com/users/samolevich'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Codewars profile
+        </a>
+        <br />
+        <a
+          className={style.contacts}
+          href='http://'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Free Code Camp profile
+        </a>
+        <br />
+        <a
+          className={style.contacts}
+          href='https://hh.ru/resume/6d6fcb45ff07ff00080039ed1f3056434d3175'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          HeadHunter cv
+        </a>
+      </p>
     </div>
-  )
-}
+  );
+};
