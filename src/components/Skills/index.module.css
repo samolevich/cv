@@ -1,5 +1,7 @@
 ul {
   list-style: none;
+  text-transform: none;
+
 }
 
 .logo {

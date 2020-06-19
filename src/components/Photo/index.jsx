@@ -14,5 +14,5 @@ export default () => {
     }, 2048)
   }, []);
 
-  return <img className={style.photo} src={ photo } alt='my face' />
+  return <img className={ style.photo } src={ photo } alt='my face' />
 }

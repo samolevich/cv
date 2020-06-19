@@ -28,8 +28,8 @@
 
 .bar {
   display: grid;
-  grid-template-rows: minmax(250px, 300px) auto minmax(200px, 300px);
-  align-self: start;
+  grid-template-rows: 250px 3fr 100px minmax(200px, 300px);
+  /* align-self: end; */
 }
 
 .info {
