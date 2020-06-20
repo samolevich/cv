@@ -145,7 +145,7 @@ export default () => {
       </a>{' '}(код)
       <br />
       <a
-        href='https://samolevich.github.io/cv/'
+        href='https://samolevich.github.io/'
         target='_blank'
         rel='noopener noreferrer'
       >
