@@ -7,3 +7,23 @@
   width: 42px;
   vertical-align: baseline;
 }
+
+.showformobile {
+  display: none;
+}
+
+@media(max-width: 767px) {
+  .hiddenformobile {
+    display: none;
+  }
+
+  .showformobile {
+    display: block;
+    padding: 0 20px;
+    align-self: end;
+  }
+
+  .logo {
+    width: 27px;
+  }
+}

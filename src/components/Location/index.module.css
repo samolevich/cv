@@ -1,3 +1,9 @@
 .logo {
   width: 42px;
 }
+
+@media(max-width: 767px) {
+  .hiddenformobile {
+    display: none;
+  }
+}

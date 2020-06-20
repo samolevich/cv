@@ -15,3 +15,10 @@ a {
 .logo {
   width: 27px;
 }
+
+@media(max-width: 767px) {
+  .hiddenformobile {
+    display: none;
+    padding: 0;
+  }
+}

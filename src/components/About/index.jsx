@@ -20,7 +20,10 @@ export default props => {
         <img className={style.logo} src='img/projects.svg' alt='projects' />{' '}
         Проекты
       </h2>
-      <p>Несколько проектов можно посмотреть на отдельной <NavLink to='/projects'>странице</NavLink>.</p>
+      <p>
+        Несколько проектов можно посмотреть на отдельной{' '}
+        <NavLink to='/projects'>странице</NavLink>.
+      </p>
 
       <h2>
         <img
@@ -70,8 +73,9 @@ export default props => {
         Основное образование - среднее.
         <br />
         При этом, чтобы быть более понятным для рынка в портфолио у меня
-        присутствуют <NavLink to='/certificate'>сертификаты</NavLink> и ряд <NavLink to='/projects'>проектов</NavLink> для более ясного представления
-        обо мне как о разработчике.
+        присутствуют <NavLink to='/certificates'>сертификаты</NavLink> и ряд{' '}
+        <NavLink to='/projects'>проектов</NavLink> для более ясного
+        представления обо мне как о разработчике.
       </p>
     </div>
   );

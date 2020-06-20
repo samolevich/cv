@@ -12,5 +12,5 @@ export default () => {
       <Location />
       <Contacts />
     </>
-  )
-}
+  );
+};
