@@ -6,12 +6,12 @@ export default () => {
   return (
     <nav>
       <li className={style.list}>
-        <NavLink to='/'>
+        <NavLink to='cv/'>
           <img className={style.logo} src='img/about.svg' alt='about' /><span className={style.hiddenformobile}> Обо мне</span>
         </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='/projects'>
+        <NavLink to='cv/projects'>
           <img className={style.logo} src='img/projects.svg' alt='projects' /><span className={style.hiddenformobile}> Проекты</span>
         </NavLink>
       </li>
@@ -25,12 +25,12 @@ export default () => {
         </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='/skills'>
+        <NavLink to='cv/skills'>
           <img className={style.logo} src='img/skills.svg' alt='skills' /><span className={style.hiddenformobile}> Навыки</span>
         </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='/expirience'>
+        <NavLink to='cv/expirience'>
           <img
             className={style.logo}
             src='img/expirience.svg'
