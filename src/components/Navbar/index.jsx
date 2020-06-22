@@ -6,7 +6,7 @@ export default () => {
   return (
     <nav>
       <li className={style.list}>
-        <NavLink to='cv/'>
+        <NavLink to='/cv/'>
           <img className={style.logo} src='img/about.svg' alt='about' /><span className={style.hiddenformobile}> Обо мне</span>
         </NavLink>
       </li>
@@ -16,7 +16,7 @@ export default () => {
         </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='/certificates'>
+        <NavLink to='/cv/certificates'>
           <img
             className={style.logo}
             src='img/certificate.svg'
@@ -25,12 +25,12 @@ export default () => {
         </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='cv/skills'>
+        <NavLink to='/cv/skills'>
           <img className={style.logo} src='img/skills.svg' alt='skills' /><span className={style.hiddenformobile}> Навыки</span>
         </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='cv/expirience'>
+        <NavLink to='/cv/expirience'>
           <img
             className={style.logo}
             src='img/expirience.svg'

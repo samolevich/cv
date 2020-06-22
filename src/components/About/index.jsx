@@ -22,7 +22,7 @@ export default props => {
       </h2>
       <p>
         Несколько проектов можно посмотреть на отдельной{' '}
-        <NavLink to='/projects'>странице</NavLink>.
+        <NavLink to='/cv/projects'>странице</NavLink>.
       </p>
 
       <h2>
@@ -73,8 +73,8 @@ export default props => {
         Основное образование - среднее.
         <br />
         При этом, чтобы быть более понятным для рынка в портфолио у меня
-        присутствуют <NavLink to='/certificates'>сертификаты</NavLink> и ряд{' '}
-        <NavLink to='/projects'>проектов</NavLink> для более ясного
+        присутствуют <NavLink to='/cv/certificates'>сертификаты</NavLink> и ряд{' '}
+        <NavLink to='/cv/projects'>проектов</NavLink> для более ясного
         представления обо мне как о разработчике.
       </p>
     </div>
