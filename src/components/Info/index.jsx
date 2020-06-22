@@ -27,11 +27,11 @@ export default () => {
   ];
   return (
     <div>
-      <Route exact path='/' component={() => <About skills={skills} />} />
       <Route path='/skills' component={() => <Skills skills={skills} />} />
       <Route path='/projects' component={Projects} />
       <Route path='/certificates' component={Certif} />
       <Route path='/expirience' component={Expirience} />
+      <Route path='/' component={() => <About skills={skills} />} />
     </div>
   );
 };
