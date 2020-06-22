@@ -8,7 +8,15 @@ export default () => {
         <img className={style.logo} src='img/projects.svg' alt='projects' />{' '}
         Проекты
       </h2>
-      <h2>Fridgy</h2>
+      <h2>
+        <a
+          href='https://github.com/negomi-e/fridgy/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Fridgy
+        </a>
+      </h2>
       <p>
         Приложение, в котором реализован виртуальный холодильник. В Fridgy легко
         добавить продукт в список, указать его срок годности, редактировать
@@ -34,7 +42,8 @@ export default () => {
         rel='noopener noreferrer'
       >
         Основной репозиторий проекта
-      </a>{' '}(код)
+      </a>{' '}
+      (код)
       <br />
       <a
         href='https://github.com/samolevich/fridgy'
@@ -42,8 +51,17 @@ export default () => {
         rel='noopener noreferrer'
       >
         Резервный форк основного репозитория проекта
-      </a>{' '}(код)
-      <h2>EventPlanner</h2>
+      </a>{' '}
+      (код)
+      <h2>
+        <a
+          href='https://github.com/ArtShilov/eventPlaner'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          EventPlanner
+        </a>
+      </h2>
       <p>
         В команде из трёх человек разрабатывал приложение, которое позволяет
         запланировать мероприятие и дать возможность проголосовать за удобное
@@ -57,7 +75,8 @@ export default () => {
         rel='noopener noreferrer'
       >
         Основной репозиторий проекта
-      </a>{' '}(код)
+      </a>{' '}
+      (код)
       <br />
       <a
         href='https://github.com/samolevich/eventPlaner'
@@ -65,8 +84,17 @@ export default () => {
         rel='noopener noreferrer'
       >
         Резервный форк основного репозитория проекта
-      </a>{' '}(код)
-      <h2>RentApp</h2>
+      </a>{' '}
+      (код)
+      <h2>
+        <a
+          href='https://github.com/SlavaPush/core-rent-app'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          RentApp
+        </a>
+      </h2>
       <p>
         Разрабытывал приложение в команде из четырёх человек, в котором
         реализованы добавление объекта недвижимости, редактирование и удаление.
@@ -81,7 +109,8 @@ export default () => {
         rel='noopener noreferrer'
       >
         Основной репозиторий проекта
-      </a>{' '}(код)
+      </a>{' '}
+      (код)
       <br />
       <a
         href='https://github.com/samolevich/core-rent-app'
@@ -89,8 +118,17 @@ export default () => {
         rel='noopener noreferrer'
       >
         Резервный форк основного репозитория проекта
-      </a>{' '}(код)
-      <h2>API Github</h2>
+      </a>{' '}
+      (код)
+      <h2>
+        <a
+          href='https://github.com/samolevich/solo-project-api-github'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          API Github
+        </a>
+      </h2>
       <p>
         Проект работает с API Github и выдаёт последнюю активность в искомой
         организации (commit, pullrequest...).
@@ -103,7 +141,8 @@ export default () => {
         rel='noopener noreferrer'
       >
         Основной репозиторий проекта
-      </a>{' '}(код)
+      </a>{' '}
+      (код)
       <br />
       <a
         href='https://samolevich.github.io/solo-project-api-github/'
@@ -112,7 +151,15 @@ export default () => {
       >
         Деплой на Github Pages
       </a>
-      <h2>API HeadHunter</h2>
+      <h2>
+        <a
+          href='https://github.com/samolevich/solo-headhunder-api'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          API HeadHunter
+        </a>
+      </h2>
       <p>
         Проект работает с API HeadHunter и выдаёт последние опубликованные
         вакансии по региону Москва.
@@ -125,7 +172,8 @@ export default () => {
         rel='noopener noreferrer'
       >
         Основной репозиторий проекта
-      </a>{' '}(код)
+      </a>{' '}
+      (код)
       <br />
       <a
         href='https://samolevich.github.io/solo-headhunder-api/'
@@ -134,7 +182,15 @@ export default () => {
       >
         Деплой на Github Pages
       </a>
-      <h2>CV</h2>
+      <h2>
+        <a
+          href='https://github.com/samolevich/cv'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          CV
+        </a>
+      </h2>
       <p>Приложение-резюме.</p>
       <a
         href='https://github.com/samolevich/cv'
@@ -142,7 +198,8 @@ export default () => {
         rel='noopener noreferrer'
       >
         Основной репозиторий проекта
-      </a>{' '}(код)
+      </a>{' '}
+      (код)
       <br />
       <a
         href='https://samolevich.github.io/cv/'

@@ -4,8 +4,8 @@
 }
 
 .logo {
-  width: 42px;
-  vertical-align: baseline;
+  width: 28px;
+  vertical-align: bottom;
 }
 
 .showformobile {
@@ -20,10 +20,5 @@
   .showformobile {
     display: block;
     padding: 0 20px;
-    align-self: end;
-  }
-
-  .logo {
-    width: 27px;
   }
 }
