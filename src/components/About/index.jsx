@@ -6,32 +6,49 @@ export default props => {
   const skills = props.skills.join(', ');
   return (
     <div>
-      <h1>
-        <img className={style.logo} src='img/about.svg' alt='about' />{' '}
-        Javascript разработчик MERN
-      </h1>
+      <h1>Javascript разработчик MERN</h1>
 
       <h2>
-        <img className={style.logo} src='img/skills.svg' alt='skills' /> Навыки
+        <NavLink to='/cv/skills'>
+          <img className={style.logo} src='img/skills.svg' alt='skills' />{' '}
+          Навыки
+        </NavLink>
       </h2>
       <p>{skills}</p>
 
       <h2>
-        <img className={style.logo} src='img/projects.svg' alt='projects' />{' '}
-        Проекты
+        <NavLink to='/cv/projects'>
+          <img className={style.logo} src='img/projects.svg' alt='projects' />{' '}
+          Проекты
+        </NavLink>
       </h2>
       <p>
-        Несколько проектов можно посмотреть на отдельной{' '}
-        <NavLink to='/cv/projects'>странице</NavLink>.
+        В моей копилке нескоько проектов разной степени сложности. Какие-то из
+        них разрабытвались в команде, используя систему контроля версий git, а
+        какие-то самостоятельно, как например, сайт-резюме, на котором вы в
+        данный момент.
+        <br />С проектами можно ознакомится на отдельной{' '}
+        <NavLink to='/cv/projects'>странице</NavLink> или в непосредственно в{' '}
+        <a
+          href='https://github.com/samolevich'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          {' '}
+          профиле Github
+        </a>
+        .
       </p>
 
       <h2>
-        <img
-          className={style.logo}
-          src='img/certificate.svg'
-          alt='certificates'
-        />{' '}
-        Сертификаты
+        <NavLink to='/cv/certificates'>
+          <img
+            className={style.logo}
+            src='img/certificate.svg'
+            alt='certificates'
+          />{' '}
+          Сертификаты
+        </NavLink>
       </h2>
       <p>
         Elbrus Coding Bootcamp JavaScript Course - более 500 часов разработки.
@@ -45,8 +62,14 @@ export default props => {
       </p>
 
       <h2>
-        <img className={style.logo} src='img/expirience.svg' alt='expirience' />{' '}
-        Опыт работы
+        <NavLink to='/cv/expirience'>
+          <img
+            className={style.logo}
+            src='img/expirience.svg'
+            alt='expirience'
+          />{' '}
+          Опыт работы
+        </NavLink>
       </h2>
       <p>
         Релевантный опыт - 6 месяцев, начиная с декабря 2019 года.
@@ -56,7 +79,9 @@ export default props => {
       </p>
 
       <h2>
-        <img className={style.logo} src='img/future.svg' alt='future' /> Планы
+        <NavLink to='/cv/'>
+          <img className={style.logo} src='img/future.svg' alt='future' /> Планы
+        </NavLink>
       </h2>
       <p>
         В ближайших планах изучить TypeScript, затем Vue. После Angular.
@@ -66,8 +91,10 @@ export default props => {
       </p>
 
       <h2>
-        <img className={style.logo} src='img/education.svg' alt='education' />{' '}
-        Образование
+        <NavLink to='/cv/'>
+          <img className={style.logo} src='img/education.svg' alt='education' />{' '}
+          Образование
+        </NavLink>
       </h2>
       <p>
         Основное образование - среднее.

@@ -11,7 +11,7 @@ export default () => {
         </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='cv/projects'>
+        <NavLink to='/cv/projects'>
           <img className={style.logo} src='img/projects.svg' alt='projects' /><span className={style.hiddenformobile}> Проекты</span>
         </NavLink>
       </li>

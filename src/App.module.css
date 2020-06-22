@@ -45,6 +45,13 @@ a:active {
   color: var(--light-blue);
 }
 
+h2>a:link,
+h2>a:visited,
+h2>a:hover,
+h2>a:active  {
+  color: var(--dark-blue);
+}
+
 .logo {
   width: 200px;
 }

@@ -1,6 +1,7 @@
 nav {
   list-style: none;
   margin: 50px 0;
+
 }
 
 a {
@@ -13,7 +14,8 @@ a {
 }
 
 .logo {
-  width: 27px;
+  width: 28px;
+  vertical-align: bottom;
 }
 
 @media(max-width: 767px) {

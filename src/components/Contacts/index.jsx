@@ -60,6 +60,7 @@ export default () => {
         </p>
       </div>
       <div className={style.showformobile}>
+        <hr/>
         <a href='tel:+79263248737'>
           <img className={style.logo} src='img/call.svg' alt='phone' />
         </a>
@@ -70,6 +71,10 @@ export default () => {
         <br />
         <a href='https://t.me/samolevich'>
           <img className={style.logo} src='img/telegram.svg' alt='telegram' />
+        </a>
+        <hr/>
+        <a href='https://github.com/samolevich' target="_blank" rel="noopener noreferrer">
+          <img className={style.logo} src='img/octocat.svg' alt='github profile'/>
         </a>
       </div>
     </>
