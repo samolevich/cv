@@ -27,7 +27,6 @@ export default () => {
   ];
   return (
     <div>
-    x
       <Route exact path='/cv/' component={() => <About skills={skills} />} />
       <Route path='/cv/skills' component={() => <Skills skills={skills} />} />
       <Route path='/cv/projects' component={Projects} />
