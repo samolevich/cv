@@ -1,6 +1,6 @@
 @font-face {
   font-family: Din;
-  src: url(/font/DINPro.ttf);
+  src: url(/cv/font/DINPro.ttf);
 }
 
 :root {
@@ -47,9 +47,12 @@ a:active {
 
 h2>a:link,
 h2>a:visited,
-h2>a:hover,
-h2>a:active  {
+h2>a:active {
   color: var(--dark-blue);
+}
+
+h2>a:hover {
+  color: var(--light-blue);
 }
 
 .logo {
