@@ -13,6 +13,10 @@ a {
   text-transform: uppercase;
 }
 
+.list span:hover {
+  color: #4e7093;
+}
+
 .logo {
   width: 28px;
   vertical-align: bottom;
