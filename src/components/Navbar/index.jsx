@@ -6,17 +6,17 @@ export default () => {
   return (
     <nav>
       <li className={style.list}>
-        <NavLink to='/'>
-          <img className={style.logo} src='img/about.svg' alt='about' /><span className={style.hiddenformobile}> Обо мне</span>
+        <NavLink to='/' exact activeClassName={style.current}>
+          <img className={style.logo} src='img/about.svg' alt='about' /><span className={style.hiddenformobile} > Обо мне</span>
         </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='/projects'>
-          <img className={style.logo} src='img/projects.svg' alt='projects' /><span className={style.hiddenformobile}> Проекты</span>
+        <NavLink to='/projects' activeClassName={style.current}>
+          <img className={style.logo} src='img/projects.svg' alt='projects' /><span className={style.hiddenformobile} > Проекты</span>
         </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='/certificates'>
+        <NavLink to='/certificates' activeClassName={style.current}>
           <img
             className={style.logo}
             src='img/certificate.svg'
@@ -25,12 +25,12 @@ export default () => {
         </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='/skills'>
+        <NavLink to='/skills' activeClassName={style.current}>
           <img className={style.logo} src='img/skills.svg' alt='skills' /><span className={style.hiddenformobile}> Навыки</span>
         </NavLink>
       </li>
       <li className={style.list}>
-        <NavLink to='/expirience'>
+        <NavLink to='/expirience' activeClassName={style.current}>
           <img
             className={style.logo}
             src='img/expirience.svg'
