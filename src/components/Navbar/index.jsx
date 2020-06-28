@@ -6,7 +6,7 @@ export default () => {
   return (
     <nav>
       <li className={style.list}>
-        <NavLink exact to='/cv/' activeClassName={style.current}>
+        <NavLink exact to='/' activeClassName={style.current}>
           <img className={style.logo} src='img/about.svg' alt='about' /><span className={style.hiddenformobile}> Обо мне</span>
         </NavLink>
       </li>
