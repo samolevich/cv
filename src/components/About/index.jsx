@@ -9,7 +9,7 @@ export default props => {
       <h1>Javascript разработчик MERN</h1>
 
       <h2>
-        <NavLink to='/cv/skills'>
+        <NavLink to='/skills'>
           <img className={style.logo} src='img/skills.svg' alt='skills' />{' '}
           Навыки
         </NavLink>
@@ -17,7 +17,7 @@ export default props => {
       <p>{skills}</p>
 
       <h2>
-        <NavLink to='/cv/projects'>
+        <NavLink to='/projects'>
           <img className={style.logo} src='img/projects.svg' alt='projects' />{' '}
           Проекты
         </NavLink>
@@ -27,7 +27,7 @@ export default props => {
         них разрабытвались в команде, используя систему контроля версий git, а
         какие-то самостоятельно, как например, текущий сайт-резюме.
         <br />С проектами можно ознакомиться на отдельной{' '}
-        <NavLink to='/cv/projects'>странице</NavLink> или в непосредственно в <a
+        <NavLink to='/projects'>странице</NavLink> или в непосредственно в <a
           href='https://github.com/samolevich'
           target='_blank'
           rel='noopener noreferrer'
@@ -38,7 +38,7 @@ export default props => {
       </p>
 
       <h2>
-        <NavLink to='/cv/certificates'>
+        <NavLink to='/certificates'>
           <img
             className={style.logo}
             src='img/certificate.svg'
@@ -59,7 +59,7 @@ export default props => {
       </p>
 
       <h2>
-        <NavLink to='/cv/expirience'>
+        <NavLink to='/expirience'>
           <img
             className={style.logo}
             src='img/expirience.svg'
@@ -76,7 +76,7 @@ export default props => {
       </p>
 
       <h2>
-        <NavLink to='/cv/'>
+        <NavLink to='/'>
           <img className={style.logo} src='img/future.svg' alt='future' /> Планы
         </NavLink>
       </h2>
@@ -88,7 +88,7 @@ export default props => {
       </p>
 
       <h2>
-        <NavLink to='/cv/'>
+        <NavLink to='/'>
           <img className={style.logo} src='img/education.svg' alt='education' />{' '}
           Образование
         </NavLink>
@@ -97,8 +97,8 @@ export default props => {
         Основное образование - среднее.
         <br />
         При этом, чтобы быть более понятным для рынка в портфолио у меня
-        присутствуют <NavLink to='/cv/certificates'>сертификаты</NavLink> и ряд{' '}
-        <NavLink to='/cv/projects'>проектов</NavLink> для более ясного
+        присутствуют <NavLink to='/certificates'>сертификаты</NavLink> и ряд{' '}
+        <NavLink to='/projects'>проектов</NavLink> для более ясного
         представления обо мне как о разработчике.
       </p>
     </div>
