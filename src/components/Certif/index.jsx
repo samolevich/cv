@@ -42,6 +42,13 @@ export default () => {
         >
           Сертификат Responsive Web Design
         </a>
+        <a
+          href='https://www.freecodecamp.org/certification/samolevich/front-end-development-libraries'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Front End Development Libraries
+        </a>
       </p>
       <p>
         Онлайн курс по JavaScript от Stepik
