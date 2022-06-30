@@ -2,6 +2,7 @@ export default {
   title: "Javascript разработчик MERN",
   skills: {
     title: "Навыки",
+    path: "/skills",
     list: [
       "Javascript",
       "React",
@@ -19,12 +20,13 @@ export default {
       "Git",
       "HTML",
       "CSS",
+      "SCSS",
     ],
-    link: "/projects",
   },
   projects: {
     title: "Проекты",
     explanation: `В моём распоряжении имеется несколько пет-проектов. Некоторые из них разрвбатывались самостоятельно, другие - в команде.`,
+    path: "/projects",
     list: [
       {
         title: "Fridgy",
@@ -32,15 +34,15 @@ export default {
         links: [
           {
             name: "Heroku Deploy",
-            path: "https://fridgy-2020.herokuapp.com/",
+            url: "https://fridgy-2020.herokuapp.com/",
           },
           {
             name: "Основной репозиторий проекта",
-            path: "https://github.com/negomi-e/fridgy/",
+            url: "https://github.com/negomi-e/fridgy/",
           },
           {
             name: "Резервный форк",
-            path: "https://github.com/samolevich/fridgy",
+            url: "https://github.com/samolevich/fridgy",
           },
         ],
       },
@@ -50,11 +52,11 @@ export default {
         links: [
           {
             name: "Основной репозиторий проекта",
-            path: "https://github.com/ArtShilov/eventPlaner",
+            url: "https://github.com/ArtShilov/eventPlaner",
           },
           {
             name: "Резервный форк",
-            path: "https://github.com/samolevich/eventPlaner",
+            url: "https://github.com/samolevich/eventPlaner",
           },
         ],
       },
@@ -64,11 +66,11 @@ export default {
         links: [
           {
             name: "Основной репозиторий проекта",
-            path: "https://github.com/SlavaPush/core-rent-app",
+            url: "https://github.com/SlavaPush/core-rent-app",
           },
           {
             name: "Резервный форк",
-            path: "https://github.com/samolevich/core-rent-app",
+            url: "https://github.com/samolevich/core-rent-app",
           },
         ],
       },
@@ -79,11 +81,11 @@ export default {
         links: [
           {
             name: "Основной репозиторий проекта",
-            path: "https://github.com/samolevich/solo-project-api-github",
+            url: "https://github.com/samolevich/solo-project-api-github",
           },
           {
             name: "Github Pages Deploy",
-            path: "https://samolevich.github.io/solo-project-api-github/",
+            url: "https://samolevich.github.io/solo-project-api-github/",
           },
         ],
       },
@@ -94,11 +96,11 @@ export default {
         links: [
           {
             name: "Основной репозиторий проекта",
-            path: "https://github.com/samolevich/solo-headhunder-api",
+            url: "https://github.com/samolevich/solo-headhunder-api",
           },
           {
             name: "Github Pages Deploy",
-            path: "https://samolevich.github.io/solo-headhunder-api/",
+            url: "https://samolevich.github.io/solo-headhunder-api/",
           },
         ],
       },
@@ -108,18 +110,148 @@ export default {
         links: [
           {
             name: "Основной репозиторий проекта",
-            path: "https://github.com/samolevich/cv",
+            url: "https://github.com/samolevich/cv",
           },
           {
             name: "Резервный форк",
-            path: "https://samolevich.github.io/cv/",
+            url: "https://samolevich.github.io/cv/",
           },
         ],
       },
     ],
   },
-  sertificates: [{ desription: `` }],
-  expirience: "",
-  futureVision: "",
-  education: "",
+  certificates: {
+    title: "Сертификаты",
+    logo: "",
+    explanation: "",
+    path: "/certificates",
+    list: [
+      {
+        desription: "Офлайн-интенсив Elbrus Coding Bootcamp",
+        certs: [
+          {
+            name: "Сертификат FullStack JavaScript разработчик",
+            url: "https://drive.google.com/file/d/1KHZQQMJqLV-86Xi47VUlu4Tm-ak8AheM/view?usp=sharing",
+            pathLocal: "/img/cert/EBC-certificate-Samolevich.png",
+            effort: "более 500 часов разработки",
+          },
+        ],
+      },
+      {
+        desription: "Онлайн курс по JavaScript от Free Code Camp",
+        certs: [
+          {
+            name: "Сертификат Back End Development and APIs",
+            url: "https://www.freecodecamp.org/certification/samolevich/back-end-development-and-apis",
+            pathLocal: "/img/cert/Back End Development and APIs.png",
+            effort: "более 300 часов разработки",
+          },
+          {
+            name: "Сертификат JavaScript Algorithms and Data Structures",
+            url: "https://www.freecodecamp.org/certification/fcca8ff6e25-52f4-4953-9dd1-5338e016a242/javascript-algorithms-and-data-structures",
+            pathLocal:
+              "/img/cert/Free Code Camp JavaScript Algorithms and Data Structures.png",
+            effort: "более 300 часов разработки",
+          },
+          {
+            name: "Сертификат Responsive Web Design",
+            url: "https://www.freecodecamp.org/certification/fcca8ff6e25-52f4-4953-9dd1-5338e016a242/responsive-web-design",
+            pathLocal: "/img/cert/Free Code Camp Responsive Web Design.png",
+            effort: "более 300 часов разработки",
+          },
+          {
+            name: "Сертификат Front End Development Libraries",
+            url: "https://www.freecodecamp.org/certification/samolevich/front-end-development-libraries",
+            pathLocal: "/img/cert/Front End Development Libraries.png",
+            effort: "более 300 часов разработки",
+          },
+        ],
+      },
+      {
+        desription: "Онлайн курс по JavaScript от Stepik",
+        certs: [
+          {
+            name: "Сертификат JavaScript Course for beginners",
+            url: "https://stepik.org/cert/283188",
+            pathLocal: "/img/cert/Stepik JavaScript for beginners.png",
+            effort: "более 300 часов разработки",
+          },
+        ],
+      },
+    ],
+  },
+  expirience: {
+    title: "Опыт",
+    logo: "",
+    relevant: {
+      title: "Релевантный опыт",
+      path: "/expirience",
+      explanation: `Начиная с декабря 2019 года имею опыт разработки как в команде, так и самостоятельно. Проекты можно псмотреть в моём репозитории Github.\n
+    Инструменты, которыми я пользуюсь:\n
+    Основная операционная система - Linux (Ubuntu).\n
+Среда разработки - VS Code.\n
+Система контроля версий - Git (Github). В основном из консоли.\n
+CSR App на React (Classes, Hooks), Redux (Thunk), JavaScript (ES6), CSS (flex, grid), SCSS, HTML.\n
+SSR App на NodeJS, Express JS, Handlebars, MongoDB, Mongoose.\n
+Некоторый опыт D3.js, React-Bootstrap, Bootstrap, MaterialUI, Materialize.`,
+    },
+
+    nonRelevant: {
+      title: "Нерелевантный опыт",
+      explanation: `17 лет опыта работы связаны с торговлей. Начиная с 18 лет, работал в торговле B2B (телекоммуникационные услуги, банковские продукты и услуги, оптовая торговля алкоголем). Самое продолжительное время работы 4.5 года занимался продажей корпусной мебели физическим лицам.`,
+    },
+  },
+  futureVision: {
+    title: "Планы",
+    logo: "",
+    path: "/",
+    description: `В планах изучить Angular JS.\b
+    В долгосрочной перспективе изучить технологии и языки для реализации Backend-логики.\b
+    Поднять уровень владения английским языком до уровня B2/C1.`,
+  },
+  education: {
+    title: "Образование",
+    logo: "",
+    path: "/",
+    description: "Основное образование - среднее.",
+  },
+
+  contact: {
+    title: "Контакты",
+    logo: "",
+    email: { title: "Mail me", address: "samolevich@gmail.com" },
+    tel: { title: "+7926 324 8737", number: "+79263248737" },
+    telegram: { title: "Telegram me", url: "https://t.me/samolevich" },
+    whatsapp: { title: "WhatsApp me", url: "https://wa.me/79263248737" },
+  },
+  profile: {
+    cv: [
+      {
+        title: "LinkedIn",
+        url: "https://www.linkedin.com/in/samolevich/",
+      },
+      {
+        title: "HeadHunter CV",
+        url: "https://hh.ru/resume/6d6fcb45ff07ff00080039ed1f3056434d3175",
+      },
+    ],
+    code: [
+      {
+        title: "Github профиль",
+        url: "https://github.com/samolevich",
+      },
+      {
+        title: "Codewars профиль",
+        url: "https://www.codewars.com/users/samolevich",
+      },
+      {
+        title: "Free Code Camp профиль",
+        url: "https://www.freecodecamp.org/samolevich",
+      },
+    ],
+  },
+  location: {
+    title: "Москва",
+    logo: "",
+  },
 };
