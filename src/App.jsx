@@ -15,7 +15,6 @@ const App = () => {
           <Info />
         </div>
       </div>
-      <div></div>
     </div>
   );
 };

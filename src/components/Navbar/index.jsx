@@ -1,10 +1,25 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import style from './index.module.css';
+import aboutMe from "../../aboutMe";
 
 export default () => {
   return (
     <nav>
+      {/* TODO Обо мне */}
+      {
+        Object.values(aboutMe)
+          .filter(el => el.isNav)
+          .map(el => (
+            <li className={style.list} key={el.title}>
+              <NavLink exact activeClassName={style.current} to={el.path}>
+                <img className={style.logo} src={el.logo} alt={el.title} /> <span className={style.hiddenformobile}>{el.title.toUpperCase()}</span>
+              </NavLink>
+            </li>
+          ))
+
+      }
+{/*
       <li className={style.list}>
         <NavLink to='/' exact activeClassName={style.current}>
           <img className={style.logo} src='img/about.svg' alt='about' /><span className={style.hiddenformobile} > Обо мне</span>
@@ -37,7 +52,7 @@ export default () => {
             alt='expirience'
           /><span className={style.hiddenformobile}> Опыт</span>
         </NavLink>
-      </li>
+      </li> */}
     </nav>
   );
 };

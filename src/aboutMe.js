@@ -188,7 +188,7 @@ export default {
   },
   expirience: {
     title: "Опыт",
-    logo: "",
+    logo: "/img/logo/expirience.svg",
     path: "/expirience",
     isNav: true,
     relevant: {
