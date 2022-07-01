@@ -3,6 +3,9 @@ export default {
   skills: {
     title: "Навыки",
     path: "/skills",
+    isNav: true,
+    logo: "/img/logo/skills.svg",
+    explanation: "Технологии, с которыми я имел возможность работать:",
     list: [
       "Javascript",
       "React",
@@ -25,8 +28,10 @@ export default {
   },
   projects: {
     title: "Проекты",
+    logo: "/img/logo/projects.svg",
     explanation: `В моём распоряжении имеется несколько пет-проектов. Некоторые из них разрвбатывались самостоятельно, другие - в команде.`,
     path: "/projects",
+    isNav: true,
     list: [
       {
         title: "Fridgy",
@@ -122,9 +127,10 @@ export default {
   },
   certificates: {
     title: "Сертификаты",
-    logo: "",
+    logo: "/img/logo/certificate.svg",
     explanation: "",
     path: "/certificates",
+    isNav: true,
     list: [
       {
         desription: "Офлайн-интенсив Elbrus Coding Bootcamp",
@@ -183,17 +189,18 @@ export default {
   expirience: {
     title: "Опыт",
     logo: "",
+    path: "/expirience",
+    isNav: true,
     relevant: {
       title: "Релевантный опыт",
-      path: "/expirience",
       explanation: `Начиная с декабря 2019 года имею опыт разработки как в команде, так и самостоятельно. Проекты можно псмотреть в моём репозитории Github.\n
-    Инструменты, которыми я пользуюсь:\n
-    Основная операционная система - Linux (Ubuntu).\n
-Среда разработки - VS Code.\n
-Система контроля версий - Git (Github). В основном из консоли.\n
-CSR App на React (Classes, Hooks), Redux (Thunk), JavaScript (ES6), CSS (flex, grid), SCSS, HTML.\n
-SSR App на NodeJS, Express JS, Handlebars, MongoDB, Mongoose.\n
-Некоторый опыт D3.js, React-Bootstrap, Bootstrap, MaterialUI, Materialize.`,
+        Инструменты, которыми я пользуюсь:\n
+        Основная операционная система - Linux (Ubuntu).\n
+        Среда разработки - VS Code.\n
+        Система контроля версий - Git (Github). В основном из консоли.\n
+        CSR App на React (Classes, Hooks), Redux (Thunk), JavaScript (ES6), CSS (flex, grid), SCSS, HTML.\n
+        SSR App на NodeJS, Express JS, Handlebars, MongoDB, Mongoose.\n
+        Некоторый опыт D3.js, React-Bootstrap, Bootstrap, MaterialUI, Materialize.`,
     },
 
     nonRelevant: {
