@@ -4,13 +4,14 @@ import Contacts from '../Contacts';
 import Navbar from '../Navbar';
 import Location from '../Location';
 
-export default () => {
+export default props => {
   return (
     <>
+      {props.title}
       <Photo />
-      <Navbar />
-      <Location />
-      <Contacts />
+      <Navbar nav={props.bar}/>
+      <Location location={props.bar.location} />
+      <Contacts contacts={props.bar.contact} />
     </>
   );
 };
