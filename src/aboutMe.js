@@ -1,5 +1,11 @@
 export default {
   title: "Javascript разработчик MERN",
+  about: {
+    title: "Обо мне",
+    path: "/",
+    isNav: true,
+    logo: "/img/logo/about.svg",
+  },
   skills: {
     title: "Навыки",
     path: "/skills",
@@ -259,6 +265,6 @@ export default {
   },
   location: {
     title: "Москва",
-    logo: "",
+    logo: "/img/logo/location.svg",
   },
 };
