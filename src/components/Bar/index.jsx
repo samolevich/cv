@@ -5,13 +5,13 @@ import Navbar from '../Navbar';
 import Location from '../Location';
 
 export default props => {
+  const { bar, bar: { location, contact }} = props;
   return (
     <>
-      {props.title}
       <Photo />
-      <Navbar nav={props.bar}/>
-      <Location location={props.bar.location} />
-      <Contacts contacts={props.bar.contact} />
+      <Navbar nav={bar}/>
+      <Location location={location} />
+      <Contacts contacts={contact} />
     </>
   );
 };
