@@ -7,7 +7,7 @@ import Certif from '../Certif';
 import Expirience from '../Expirience';
 
 export default props => {
-  const { info: { skills: { list }}, projects } = props;
+  const { info: { skills: { list }, projects}} = props;
   return (
     <div>
       <Route exact path='/' component={() => <About skills={list} />} />
