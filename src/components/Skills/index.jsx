@@ -13,14 +13,6 @@ export default props => {
           <li className={style.skill} key={skill}>{skill}</li>
         ))}
       </ul>
-      {/* <h2>
-        <img className={style.logo} src='img/skills.svg' alt='skills' />{' '}Навыки
-      </h2>
-      <ul>
-        {props.skills.map(skill => (
-          <li className={style.skill} key={skill}>{skill}</li>
-        ))}
-      </ul> */}
     </div>
   );
 };

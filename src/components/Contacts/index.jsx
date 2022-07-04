@@ -3,7 +3,7 @@ import style from './index.module.css';
 
 export default props => {
   const { contacts, contacts: { title, logo } } = props;
-  // TODO REFACTOR NEED to SEPARATE CONTACT AND PROFILE
+  // TODO REFACTORing NEED to SEPARATE CONTACT and PROFILE
   return (
     <>
       <div className={style.hiddenformobile}>
@@ -27,7 +27,6 @@ export default props => {
             ))
             }
         </p>
-
         <p>
           {
             contacts.code
