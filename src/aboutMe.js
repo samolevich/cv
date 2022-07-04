@@ -231,11 +231,11 @@ export default {
 
   contact: {
     title: "Контакты",
-    logo: "",
-    email: { title: "Mail me", address: "samolevich@gmail.com" },
-    tel: { title: "+7926 324 8737", number: "+79263248737" },
-    telegram: { title: "Telegram me", url: "https://t.me/samolevich" },
-    whatsapp: { title: "WhatsApp me", url: "https://wa.me/79263248737" },
+    logo: "/img/logo/contacts.svg",
+    tel: { title: "+7926 324 8737", url: "tel:+79263248737" },
+    email: { title: "Эл.почта", url: "mailto:samolevich@gmail.com" },
+    telegram: { title: "Телеграм", url: "https://t.me/samolevich" },
+    whatsapp: { title: "Вотсап", url: "https://wa.me/79263248737" },
   },
   profile: {
     cv: [
@@ -258,7 +258,7 @@ export default {
         url: "https://www.codewars.com/users/samolevich",
       },
       {
-        title: "Free Code Camp профиль",
+        title: "FreeCodeCamp профиль",
         url: "https://www.freecodecamp.org/samolevich",
       },
     ],
