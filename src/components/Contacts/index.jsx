@@ -60,6 +60,17 @@ export default props => {
             }
         </p>
       </div>
+      <div className={style.showformobile}>
+        <hr />
+        <a href={contacts.tel.url}><img src='/img/logo/call.svg' alt={contacts.tel.title} className={style.logo} /></a>
+        <br />
+        <a href={contacts.email.url}><img src='/img/logo/contacts.svg' alt={contacts.email.title} className={style.logo} /></a>
+        <br />
+        <a href={contacts.telegram.url}><img src='/img/logo/telegram.svg' alt={contacts.telegram.title} className={style.logo} /></a>
+        <br />
+        <a href={contacts.code[0].url}><img src='/img/logo/octocat.svg' alt={contacts.code[0].title} className={style.logo} /></a>
+        <br />
+      </div>
     </>
   );
 };
