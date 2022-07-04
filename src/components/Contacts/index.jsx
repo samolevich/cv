@@ -15,15 +15,15 @@ export default props => {
           Object.entries(contacts)
             .filter(prop => prop[1].title)
             .map(contact => (
-              <>
+              <span key={contact[1].title}>
                 <a
                   className={style.contacts}
                   href={contact[1].url}
-                  key={contact[1].title}>
+                 >
                     {contact[1].title}
                 </a>
                 <br />
-              </>
+              </span>
             ))
             }
         </p>
@@ -31,15 +31,15 @@ export default props => {
           {
             contacts.code
               .map(contact => (
-                <>
+                <span key={contact.title}>
                   <a
                     className={style.contacts}
                     href={contact.url}
-                    key={contact.title}>
+                   >
                       {contact.title}
                   </a>
                   <br />
-                </>
+                </span>
               ))
             }
         </p>
@@ -47,15 +47,15 @@ export default props => {
           {
             contacts.cv
               .map(contact => (
-                <>
+                <span key={contact.title}>
                   <a
                     className={style.contacts}
                     href={contact.url}
-                    key={contact.title}>
+                   >
                       {contact.title}
                   </a>
                   <br />
-                </>
+                </span>
               ))
             }
         </p>
