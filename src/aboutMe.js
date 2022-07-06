@@ -199,14 +199,16 @@ export default {
     isNav: true,
     relevant: {
       title: "Релевантный опыт",
-      explanation: `Начиная с декабря 2019 года имею опыт разработки как в команде, так и самостоятельно. Проекты можно псмотреть в моём репозитории Github.\n
-        Инструменты, которыми я пользуюсь:\n
-        Основная операционная система - Linux (Ubuntu).\n
-        Среда разработки - VS Code.\n
-        Система контроля версий - Git (Github). В основном из консоли.\n
-        CSR App на React (Classes, Hooks), Redux (Thunk), JavaScript (ES6), CSS (flex, grid), SCSS, HTML.\n
-        SSR App на NodeJS, Express JS, Handlebars, MongoDB, Mongoose.\n
-        Некоторый опыт D3.js, React-Bootstrap, Bootstrap, MaterialUI, Materialize.`,
+      explanation: [
+        "Начиная с декабря 2019 года имею опыт разработки как в команде, так и самостоятельно. Проекты можно псмотреть в моём репозитории Github.",
+        "Инструменты, которыми я пользуюсь:",
+        "Основная операционная система - Linux (Ubuntu).",
+        "Среда разработки - VS Code.",
+        "Система контроля версий - Git (Github). В основном из консоли.",
+        "CSR App на React (Classes, Hooks), Redux (Thunk), JavaScript (ES6), CSS (flex, grid), SCSS, HTML.",
+        "SSR App на NodeJS, Express JS, Handlebars, MongoDB, Mongoose.",
+        "Некоторый опыт D3.js, React-Bootstrap, Bootstrap, MaterialUI, Materialize.",
+      ],
     },
 
     nonRelevant: {
