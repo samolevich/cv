@@ -2,3 +2,7 @@
   width: 42px;
   vertical-align: bottom;
 }
+
+hr, h3 {
+  margin-top: 35px;
+}
