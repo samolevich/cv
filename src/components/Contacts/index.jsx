@@ -1,8 +1,8 @@
 import React from 'react';
 import style from './index.module.css';
 
-export default props => {
-  const { contacts, contacts: { title, logo } } = props;
+export default ({ contacts }) => {
+  const { title, logo } = contacts;
   // TODO REFACTORing NEED to SEPARATE CONTACT and PROFILE
   return (
     <>

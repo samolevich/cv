@@ -1,8 +1,7 @@
 import React from 'react';
 import style from './index.module.css';
 
-export default props => {
-  const { exp } = props;
+export default ({ exp }) => {
   const ms = new Date().getTime() - new Date(2020, 6).getTime();
   const months = Math.ceil(ms/1000/60/60/24/30.4375);
   const timeSince = `В качестве разработчика более ${Math.floor(months / 12)} лет и ${months % 12} мес. `;

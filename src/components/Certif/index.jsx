@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import style from './index.module.css';
 
-export default ({ certificates }) => {
+export default ({ certificates: { title, logo, list } }) => {
   const [show, setShow] = useState(false);
-  const { title, logo, list } = certificates;
   return (
     <div>
       <h2>

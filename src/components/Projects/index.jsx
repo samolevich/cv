@@ -1,13 +1,14 @@
 import React from 'react';
 import style from './index.module.css';
 
-export default props => {
-  const { projects: { title, logo, list } } = props;
+export default ({ projects: { title, logo, list } }) => {
+
   const counter = (step = 1) => {
     let collector = 0;
     return () => collector+= step;
   }
   const inc = counter();
+
   return (
     <div>
       <h2>

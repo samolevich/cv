@@ -1,10 +1,10 @@
 import React from 'react';
 import style from './index.module.css';
 
-export default props => {
+export default ( { location: { title , logo}}) => {
   return (
     <h2 className={style.hiddenformobile}>
-      <img src={props.location.logo} alt={props.location.title} className={style.logo} /> {props.location.title}
+      <img src={logo} alt={title} className={style.logo} /> {title}
     </h2>
   );
 };

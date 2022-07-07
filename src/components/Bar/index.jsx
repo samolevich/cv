@@ -4,8 +4,8 @@ import Contacts from '../Contacts';
 import Navbar from '../Navbar';
 import Location from '../Location';
 
-export default props => {
-  const { bar, bar: { location, contact, profile }} = props;
+export default ({ bar }) => {
+  const { location, contact, profile } = bar;
   const communications = { ...contact, ...profile};
   return (
     <>
