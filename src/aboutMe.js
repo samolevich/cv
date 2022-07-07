@@ -139,7 +139,7 @@ export default {
     isNav: true,
     list: [
       {
-        desription: "Офлайн-интенсив Elbrus Coding Bootcamp",
+        description: "Офлайн-интенсив Elbrus Coding Bootcamp",
         certs: [
           {
             name: "Сертификат FullStack JavaScript разработчик",
@@ -150,7 +150,7 @@ export default {
         ],
       },
       {
-        desription: "Онлайн курс по JavaScript от Free Code Camp",
+        description: "Онлайн курс по JavaScript от Free Code Camp",
         certs: [
           {
             name: "Сертификат Back End Development and APIs",
@@ -180,7 +180,7 @@ export default {
         ],
       },
       {
-        desription: "Онлайн курс по JavaScript от Stepik",
+        description: "Онлайн курс по JavaScript от Stepik",
         certs: [
           {
             name: "Сертификат JavaScript Course for beginners",
