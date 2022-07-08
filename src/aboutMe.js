@@ -24,6 +24,7 @@ export default {
       "Bootstrap",
       "Materialize",
       "MaterialUI",
+      "AntDesign",
       "React-Bootstrap",
       "Linux",
       "Git",
@@ -150,7 +151,7 @@ export default {
         ],
       },
       {
-        description: "Онлайн курс по JavaScript от Free Code Camp",
+        description: "Онлайн курс JavaScript от Free Code Camp",
         certs: [
           {
             name: "Сертификат Back End Development and APIs",
@@ -180,7 +181,7 @@ export default {
         ],
       },
       {
-        description: "Онлайн курс по JavaScript от Stepik",
+        description: "Онлайн курс JavaScript от Stepik",
         certs: [
           {
             name: "Сертификат JavaScript Course for beginners",
@@ -200,33 +201,41 @@ export default {
     relevant: {
       title: "Релевантный опыт",
       explanation: [
-        "Начиная с декабря 2019 года имею опыт разработки как в команде, так и самостоятельно. Проекты можно псмотреть в моём репозитории Github.",
+        "Начиная с июля 2020 года имею опыт разработки как в команде, так и самостоятельно. Проекты можно псмотреть в моём репозитории Github.",
         "Инструменты, которыми я пользуюсь:",
         "Основная операционная система - Linux (Ubuntu).",
         "Среда разработки - VS Code.",
-        "Система контроля версий - Git (Github). В основном из консоли.",
+        "Система контроля версий - Git (Github). В основном через консоль.",
         "CSR App на React (Classes, Hooks), Redux (Thunk), JavaScript (ES6), CSS (flex, grid), SCSS, HTML.",
         "SSR App на NodeJS, Express JS, Handlebars, MongoDB, Mongoose.",
-        "Некоторый опыт D3.js, React-Bootstrap, Bootstrap, MaterialUI, Materialize.",
+        "Некоторый опыт D3.js, React-Bootstrap, Bootstrap, MaterialUI, Materialize, AntDesign.",
       ],
     },
-
     nonRelevant: {
       title: "Нерелевантный опыт",
       explanation: `17 лет опыта работы связаны с торговлей. Начиная с 18 лет, работал в торговле B2B (телекоммуникационные услуги, банковские продукты и услуги, оптовая торговля алкоголем). Самое продолжительное время работы 4.5 года занимался продажей корпусной мебели физическим лицам.`,
     },
+    timeSince: () => {
+      const ms = new Date().getTime() - new Date(2020, 6).getTime();
+      let months = Math.ceil(ms / 1000 / 60 / 60 / 24 / 30.4375);
+      const years = Math.floor(months / 12);
+      months %= 12;
+      return `В качестве разработчика более ${years} лет и ${months} мес. `;
+    },
   },
   futureVision: {
     title: "Планы",
-    logo: "",
+    logo: "/img/logo/future.svg",
     path: "/",
-    description: `В планах изучить Angular JS.\b
-    В долгосрочной перспективе изучить технологии и языки для реализации Backend-логики.\b
-    Поднять уровень владения английским языком до уровня B2/C1.`,
+    description: [
+      "В планах изучить Angular JS.",
+      "В долгосрочной перспективе изучить технологии и языки для реализации Backend-логики.",
+      "Поднять уровень владения английским языком до уровня B2/C1.",
+    ],
   },
   education: {
     title: "Образование",
-    logo: "",
+    logo: "/img/logo/education.svg",
     path: "/",
     description: "Основное образование - среднее.",
   },
