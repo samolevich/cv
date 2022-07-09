@@ -42,7 +42,7 @@ export default ({ certificates: { title, logo, list } }) => {
           {
             list.map(school => {
               return school.certs.map(image => (
-                <img src={image.pathLocal} alt={image.name} className={style.certificate} />
+                <img src={image.pathLocal} alt={image.name} className={style.certificate} key={image.name}/>
               ))
             })
           }
