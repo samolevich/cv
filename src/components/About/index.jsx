@@ -2,105 +2,104 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import style from './index.module.css';
 
-export default props => {
-  const skills = props.skills.join(', ');
+export default ({ info }) => {
+  const { skills, projects, certificates, expirience, futureVision, education } = info;
+  // TODO NEED REFACTORING FOR RENDER DATA BY CYCLES
   return (
     <div>
-      <h1>Javascript разработчик MERN</h1>
+      <h1>{info.title}</h1>
 
       <h2>
-        <NavLink to='/skills'>
-          <img className={style.logo} src='img/skills.svg' alt='skills' />{' '}
-          Навыки
-        </NavLink>
-      </h2>
-      <p>{skills}</p>
-
-      <h2>
-        <NavLink to='/projects'>
-          <img className={style.logo} src='img/projects.svg' alt='projects' />{' '}
-          Проекты
-        </NavLink>
-      </h2>
-      <p>
-        В моей копилке несколько проектов разной степени сложности. Какие-то из
-        них разрабытвались в команде, используя систему контроля версий git, а
-        какие-то самостоятельно, как например, текущий сайт-резюме.
-        <br />С проектами можно ознакомиться на отдельной{' '}
-        <NavLink to='/cv/projects'>странице</NavLink> или в непосредственно в <a
-          href='https://github.com/samolevich'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-        профиле Github
-        </a>
-        .
-      </p>
-
-      <h2>
-        <NavLink to='/certificates'>
+        <NavLink to={skills.path}>
           <img
             className={style.logo}
-            src='img/certificate.svg'
-            alt='certificates'
-          />{' '}
-          Сертификаты
+            src={skills.logo}
+            alt={skills.title}
+          /> {skills.title}
         </NavLink>
       </h2>
-      <p>
-        Elbrus Coding Bootcamp JavaScript Course - более 500 часов разработки.
-        <br />
-        Free Code Camp JavaScript Algorithms and Data Structures - более 300
-        часов разработки.
-        <br />
-        Free Code Camp Responsive Web Design - более 300 часов разработки.
-        <br />
-        Stepik JavaScript Course for beginners - около 100 часов разработки.
-      </p>
+      <p>{skills.list.join(', ')}.</p>
 
       <h2>
-        <NavLink to='/expirience'>
+        <NavLink to={projects.path}>
           <img
             className={style.logo}
-            src='img/expirience.svg'
-            alt='expirience'
-          />{' '}
-          Опыт работы
+            src={projects.logo}
+            alt={projects.title}
+          /> {projects.title}
         </NavLink>
       </h2>
       <p>
-        Релевантный опыт - 6 месяцев, начиная с декабря 2019 года.
-        <br />
-        Нерелевантный опыт - 17 лет в торговле (корпусная мебель, банковские
-        продукты и услуги, телекоммуникационные продукты и услуги).
+        {projects.explanation}<br />
+        Подробнее на странице <NavLink to={projects.path}>{projects.title}</NavLink>.
       </p>
 
       <h2>
-        <NavLink to='/'>
-          <img className={style.logo} src='img/future.svg' alt='future' /> Планы
+        <NavLink to={certificates.path}>
+          <img
+            className={style.logo}
+            src={certificates.logo}
+            alt={certificates.title}
+          /> {certificates.title}
         </NavLink>
       </h2>
       <p>
-        В ближайших планах изучить TypeScript, затем Vue. После Angular.
-        <br />
-        В среднесрочных планах изучить Python, затем Django.
-        <br />В планах на долгую перспективу изучить Go, C/C++.
+        {
+          certificates.list.map(school => {
+            return school.certs.map(course => (
+              <span key={course.name}>{course.name} - {course.effort}.<br /></span>
+            ))
+          })
+        }
+        Подробнее на странице <NavLink to={certificates.path}>{certificates.title}</NavLink>.
       </p>
 
       <h2>
-        <NavLink to='/'>
-          <img className={style.logo} src='img/education.svg' alt='education' />{' '}
-          Образование
+        <NavLink to={expirience.path}>
+          <img
+            className={style.logo}
+            src={expirience.logo}
+            alt={expirience.title}
+          /> {expirience.title}
         </NavLink>
       </h2>
       <p>
-        Основное образование - среднее.
+        {expirience.relevant.title}<br />{expirience.timeSince()}
         <br />
-        При этом, чтобы быть более понятным для рынка в портфолио у меня
-        присутствуют <NavLink to='/certificates'>сертификаты</NavLink> и ряд{' '}
-        <NavLink to='/projects'>проектов</NavLink> для более ясного
-        представления обо мне как о разработчике.
+        <br />
+        {expirience.nonRelevant.title}<br />{expirience.nonRelevant.explanation}
       </p>
+
+      <h2>
+        <NavLink to={futureVision.path}>
+          <img
+            className={style.logo}
+            src={futureVision.logo}
+            alt={futureVision.title}
+          /> {futureVision.title}
+        </NavLink>
+      </h2>
+      <p>
+        {
+          futureVision.description.map(plan => (
+            <span key={plan}>
+              {plan}
+              <br />
+            </span>
+          ))
+        }
+      </p>
+
+      <h2>
+        <NavLink to={education.path}>
+          <img
+            className={style.logo}
+            src={education.logo}
+            alt={education.title}
+          /> {education.title}
+        </NavLink>
+      </h2>
+      <p>{education.description}</p>
     </div>
   );
 };
