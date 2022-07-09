@@ -14,12 +14,12 @@ export default ({ certificates: { title, logo, list } }) => {
       </h2>
       {
         list.map(school => (
-          <p>
+          <p key={school.description}>
             {school.description}
             <br />
             {
               school.certs.map(course => (
-                <span>
+                <span key={course.name}>
                   <a href={course.url} target='_blank' rel='noopener noreferrer'>
                     {course.name}
                   </a> - {course.effort}
