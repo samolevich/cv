@@ -4,13 +4,13 @@ export default {
     title: "Обо мне",
     path: "/",
     isNav: true,
-    logo: "/img/logo/about.svg",
+    logo: "./img/logo/about.svg",
   },
   skills: {
     title: "Навыки",
     path: "/skills",
     isNav: true,
-    logo: "/img/logo/skills.svg",
+    logo: "./img/logo/skills.svg",
     explanation: "Технологии, с которыми я имел возможность работать:",
     list: [
       "Javascript",
@@ -35,7 +35,7 @@ export default {
   },
   projects: {
     title: "Проекты",
-    logo: "/img/logo/projects.svg",
+    logo: "./img/logo/projects.svg",
     explanation: `В моём распоряжении имеется несколько пет-проектов. Некоторые из них разрвбатывались самостоятельно, другие - в команде.`,
     path: "/projects",
     isNav: true,
@@ -134,7 +134,7 @@ export default {
   },
   certificates: {
     title: "Сертификаты",
-    logo: "/img/logo/certificate.svg",
+    logo: "./img/logo/certificate.svg",
     explanation: "",
     path: "/certificates",
     isNav: true,
@@ -145,7 +145,7 @@ export default {
           {
             name: "Сертификат FullStack JavaScript разработчик",
             url: "https://drive.google.com/file/d/1KHZQQMJqLV-86Xi47VUlu4Tm-ak8AheM/view?usp=sharing",
-            pathLocal: "/img/cert/EBC-certificate-Samolevich.png",
+            pathLocal: "./img/cert/EBC-certificate-Samolevich.png",
             effort: "более 500 часов разработки",
           },
         ],
@@ -156,26 +156,26 @@ export default {
           {
             name: "Сертификат Back End Development and APIs",
             url: "https://www.freecodecamp.org/certification/samolevich/back-end-development-and-apis",
-            pathLocal: "/img/cert/Back End Development and APIs.png",
+            pathLocal: "./img/cert/Back End Development and APIs.png",
             effort: "более 300 часов разработки",
           },
           {
             name: "Сертификат JavaScript Algorithms and Data Structures",
             url: "https://www.freecodecamp.org/certification/fcca8ff6e25-52f4-4953-9dd1-5338e016a242/javascript-algorithms-and-data-structures",
             pathLocal:
-              "/img/cert/Free Code Camp JavaScript Algorithms and Data Structures.png",
+              "./img/cert/Free Code Camp JavaScript Algorithms and Data Structures.png",
             effort: "более 300 часов разработки",
           },
           {
             name: "Сертификат Responsive Web Design",
             url: "https://www.freecodecamp.org/certification/fcca8ff6e25-52f4-4953-9dd1-5338e016a242/responsive-web-design",
-            pathLocal: "/img/cert/Free Code Camp Responsive Web Design.png",
+            pathLocal: "./img/cert/Free Code Camp Responsive Web Design.png",
             effort: "более 300 часов разработки",
           },
           {
             name: "Сертификат Front End Development Libraries",
             url: "https://www.freecodecamp.org/certification/samolevich/front-end-development-libraries",
-            pathLocal: "/img/cert/Front End Development Libraries.png",
+            pathLocal: "./img/cert/Front End Development Libraries.png",
             effort: "более 300 часов разработки",
           },
         ],
@@ -186,7 +186,7 @@ export default {
           {
             name: "Сертификат JavaScript Course for beginners",
             url: "https://stepik.org/cert/283188",
-            pathLocal: "/img/cert/Stepik JavaScript for beginners.png",
+            pathLocal: "./img/cert/Stepik JavaScript for beginners.png",
             effort: "более 300 часов разработки",
           },
         ],
@@ -195,7 +195,7 @@ export default {
   },
   expirience: {
     title: "Опыт",
-    logo: "/img/logo/expirience.svg",
+    logo: "./img/logo/expirience.svg",
     path: "/expirience",
     isNav: true,
     relevant: {
@@ -225,7 +225,7 @@ export default {
   },
   futureVision: {
     title: "Планы",
-    logo: "/img/logo/future.svg",
+    logo: "./img/logo/future.svg",
     path: "/",
     description: [
       "В планах изучить Angular JS.",
@@ -235,14 +235,14 @@ export default {
   },
   education: {
     title: "Образование",
-    logo: "/img/logo/education.svg",
+    logo: "./img/logo/education.svg",
     path: "/",
     description: "Основное образование - среднее.",
   },
 
   contact: {
     title: "Контакты",
-    logo: "/img/logo/contacts.svg",
+    logo: "./img/logo/contacts.svg",
     tel: { title: "+7926 324 8737", url: "tel:+79263248737" },
     email: { title: "Эл.почта", url: "mailto:samolevich@gmail.com" },
     telegram: { title: "Телеграм", url: "https://t.me/samolevich" },
@@ -276,6 +276,6 @@ export default {
   },
   location: {
     title: "Москва",
-    logo: "/img/logo/location.svg",
+    logo: "./img/logo/location.svg",
   },
 };
