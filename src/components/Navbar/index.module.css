@@ -23,7 +23,7 @@ a {
 
 .logo {
   width: 28px;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 @media(max-width: 767px) {
