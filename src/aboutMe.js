@@ -161,14 +161,14 @@ export default {
           },
           {
             name: "Сертификат JavaScript Algorithms and Data Structures",
-            url: "https://www.freecodecamp.org/certification/fcca8ff6e25-52f4-4953-9dd1-5338e016a242/javascript-algorithms-and-data-structures",
+            url: "https://www.freecodecamp.org/certification/samolevich/javascript-algorithms-and-data-structures",
             pathLocal:
               "./img/cert/Free Code Camp JavaScript Algorithms and Data Structures.png",
             effort: "более 300 часов разработки",
           },
           {
             name: "Сертификат Responsive Web Design",
-            url: "https://www.freecodecamp.org/certification/fcca8ff6e25-52f4-4953-9dd1-5338e016a242/responsive-web-design",
+            url: "https://www.freecodecamp.org/certification/samolevich/responsive-web-design",
             pathLocal: "./img/cert/Free Code Camp Responsive Web Design.png",
             effort: "более 300 часов разработки",
           },
