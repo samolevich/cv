@@ -216,11 +216,21 @@ export default {
       explanation: `17 лет опыта работы связаны с торговлей. Начиная с 18 лет, работал в торговле B2B (телекоммуникационные услуги, банковские продукты и услуги, оптовая торговля алкоголем). Самое продолжительное время работы 4.5 года занимался продажей корпусной мебели физическим лицам.`,
     },
     timeSince: () => {
-      const ms = new Date().getTime() - new Date(2020, 6).getTime();
+      const ms = new Date().getTime() - new Date(2020, 7).getTime();
       let months = Math.ceil(ms / 1000 / 60 / 60 / 24 / 30.4375);
       const years = Math.floor(months / 12);
       months %= 12;
-      return `В качестве разработчика более ${years} лет и ${months} мес. `;
+      const yearDeclension = years
+        ? years % 10 === 1 && years % 100 !== 11
+          ? `${years} года `
+          : `${years} лет `
+        : "";
+      const monthDeclension = months
+        ? months === 1
+          ? `и ${months} месяцa. `
+          : `и ${months} месяцев. `
+        : "";
+      return `В качестве разработчика более ${yearDeclension}${monthDeclension}. `;
     },
   },
   futureVision: {
