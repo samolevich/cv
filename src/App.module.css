@@ -69,7 +69,13 @@ h2>a:hover {
 
   .content {
     display: grid;
-    grid-template-columns: 42px auto;
+    grid-template-columns: auto;
+    margin-left: 42px;
+  }
+
+  .bar {
+    position: fixed;
+    margin: -42px;
   }
 
 }

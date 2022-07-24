@@ -59,6 +59,20 @@ export default {
         ],
       },
       {
+        title: "TODO App",
+        description: `Клвссическое приложение TODO List. React JS, Scss`,
+        links: [
+          {
+            name: "Основной репозиторий проекта",
+            url: "https://github.com/samolevich/todo/",
+          },
+          {
+            name: "Github Pages Deploy",
+            url: "https://samolevich.github.io/todo/",
+          },
+        ],
+      },
+      {
         title: "EventPlanner",
         description: `Командная реализация SSR-приложения. Добавить мероприятие, выбрать время, получить статистику.\nСтек: Node JS, Express JS, Handlebars, Mongo DB, Mongoose, BCrypt(lib), Javascript, HTML, CSS.`,
         links: [
@@ -201,7 +215,9 @@ export default {
     relevant: {
       title: "Релевантный опыт",
       explanation: [
-        "Начиная с июля 2020 года имею опыт разработки как в команде, так и самостоятельно. Проекты можно псмотреть в моём репозитории Github.",
+        "Начиная с июля 2020 года имею опыт разработки как в команде, так и самостоятельно.",
+        "Опыт коммерческой разработки в таких компаниях как Айтеко, ФГБУ ИАЦ МЧС РФ. А также в качестве самозанятого.",
+        "Проекты можно псмотреть в моём репозитории Github.",
         "Инструменты, которыми я пользуюсь:",
         "Основная операционная система - Linux (Ubuntu).",
         "Среда разработки - VS Code.",
