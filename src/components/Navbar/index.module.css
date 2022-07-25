@@ -24,6 +24,7 @@ a {
 .logo {
   width: 28px;
   vertical-align: middle;
+  padding-right: 8px;
 }
 
 @media(max-width: 767px) {

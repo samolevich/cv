@@ -12,7 +12,7 @@ export default ({ nav }) => {
             <li className={style.list} key={el.title}>
               <NavLink exact activeClassName={style.current} to={el.path}>
                 <img className={style.logo} src={el.logo} alt={el.title} />
-                <span className={style.hiddenformobile}> {el.title.toUpperCase()}</span>
+                <span className={style.hiddenformobile}>{el.title.toUpperCase()}</span>
               </NavLink>
             </li>
           ))
