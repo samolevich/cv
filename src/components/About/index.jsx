@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import style from "./index.module.css";
 
 export default ({ info }) => {
-  // TODO NEED REFACTORING FOR RENDER DATA BY CYCLES
   const {
     skills,
     projects,
@@ -13,106 +12,102 @@ export default ({ info }) => {
     education,
   } = info;
 
+  const dataRepresentation = [
+    {
+      title: skills.title,
+      path: skills.path,
+      logo: skills.logo,
+      explanation: () => skills.list.join(", "),
+    },
+    {
+      title: projects.title,
+      path: projects.path,
+      logo: projects.logo,
+      explanation: () => (
+        <>
+          {projects.explanation}
+          <br />
+          <NavLink to={projects.path}>{projects.title.toUpperCase()}</NavLink>.
+        </>
+      ),
+    },
+    {
+      title: certificates.title,
+      path: certificates.path,
+      logo: certificates.logo,
+      explanation: () => (
+        <>
+          {certificates.list.map(school => {
+            return school.certs.map(course => (
+              <span key={course.name}>
+                {course.name} - {course.effort}.<br />
+              </span>
+            ));
+          })}
+          <NavLink to={certificates.path}>
+            {certificates.title.toUpperCase()}
+          </NavLink>
+          .
+        </>
+      ),
+    },
+    {
+      title: expirience.title,
+      path: expirience.path,
+      logo: expirience.logo,
+      explanation: () => (
+        <>
+          {expirience.relevant.title}
+          <br />
+          {expirience.timeSince()}
+          <br />
+          <br />
+          {expirience.nonRelevant.title}
+          <br />
+          {expirience.nonRelevant.explanation}
+        </>
+      ),
+    },
+    {
+      title: futureVision.title,
+      path: futureVision.path,
+      logo: futureVision.logo,
+      explanation: () => (
+        <>
+          {futureVision.description.map(plan => (
+            <span key={plan}>
+              {plan}
+              <br />
+            </span>
+          ))}
+        </>
+      ),
+    },
+    {
+      title: education.title,
+      path: education.path,
+      logo: education.logo,
+      explanation: () => education.description,
+    },
+  ];
+
+  const description = dataRepresentation.map(article => (
+    <>
+      <h2>
+        <NavLink to={article.path}>
+          <img className={style.logo} src={article.logo} alt={article.title} />
+          {article.title}
+        </NavLink>
+      </h2>
+      <p>{article.explanation()}</p>
+    </>
+  ));
+
   return (
     <div>
       <h1>{info.title}</h1>
 
-      <h2>
-        <NavLink to={skills.path}>
-          <img className={style.logo} src={skills.logo} alt={skills.title} />
-          {skills.title}
-        </NavLink>
-      </h2>
-      <p>{skills.list.join(", ")}.</p>
-
-      <h2>
-        <NavLink to={projects.path}>
-          <img
-            className={style.logo}
-            src={projects.logo}
-            alt={projects.title}
-          />
-          {projects.title}
-        </NavLink>
-      </h2>
-      <p>
-        {projects.explanation}
-        <br />
-        <NavLink to={projects.path}>{projects.title}</NavLink>.
-      </p>
-
-      <h2>
-        <NavLink to={certificates.path}>
-          <img
-            className={style.logo}
-            src={certificates.logo}
-            alt={certificates.title}
-          />
-          {certificates.title}
-        </NavLink>
-      </h2>
-      <p>
-        {certificates.list.map(school => {
-          return school.certs.map(course => (
-            <span key={course.name}>
-              {course.name} - {course.effort}.<br />
-            </span>
-          ));
-        })}
-        <NavLink to={certificates.path}>{certificates.title}</NavLink>.
-      </p>
-
-      <h2>
-        <NavLink to={expirience.path}>
-          <img
-            className={style.logo}
-            src={expirience.logo}
-            alt={expirience.title}
-          />
-          {expirience.title}
-        </NavLink>
-      </h2>
-      <p>
-        {expirience.relevant.title}
-        <br />
-        {expirience.timeSince()}
-        <br />
-        <br />
-        {expirience.nonRelevant.title}
-        <br />
-        {expirience.nonRelevant.explanation}
-      </p>
-
-      <h2>
-        <NavLink to={futureVision.path}>
-          <img
-            className={style.logo}
-            src={futureVision.logo}
-            alt={futureVision.title}
-          />
-          {futureVision.title}
-        </NavLink>
-      </h2>
-      <p>
-        {futureVision.description.map(plan => (
-          <span key={plan}>
-            {plan}
-            <br />
-          </span>
-        ))}
-      </p>
-
-      <h2>
-        <NavLink to={education.path}>
-          <img
-            className={style.logo}
-            src={education.logo}
-            alt={education.title}
-          />
-          {education.title}
-        </NavLink>
-      </h2>
-      <p>{education.description}</p>
+      {description}
     </div>
   );
 };
