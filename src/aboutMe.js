@@ -269,10 +269,24 @@ export default {
   contact: {
     title: "Контакты",
     logo: "./img/logo/contacts.svg",
-    tel: { title: "+7926 324 8737", url: "tel:+79263248737" },
-    email: { title: "Эл.почта", url: "mailto:samolevich@gmail.com" },
-    telegram: { title: "Телеграм", url: "https://t.me/samolevich" },
-    whatsapp: { title: "Вотсап", url: "https://wa.me/79263248737" },
+    interactions: [
+      {
+        title: "+7926 324 8737",
+        url: "tel:+79263248737",
+        iconForMobileVersion: "./img/logo/call.svg",
+      },
+      {
+        title: "Эл.почта",
+        url: "mailto:samolevich@gmail.com",
+        iconForMobileVersion: "./img/logo/contacts.svg",
+      },
+      {
+        title: "Телеграм",
+        url: "https://t.me/samolevich",
+        iconForMobileVersion: "./img/logo/telegram.svg",
+      },
+      { title: "Вотсап", url: "https://wa.me/79263248737" },
+    ],
   },
   profile: {
     cv: [
@@ -289,6 +303,7 @@ export default {
       {
         title: "Github профиль",
         url: "https://github.com/samolevich",
+        iconForMobileVersion: "./img/logo/octocat.svg",
       },
       {
         title: "Codewars профиль",
