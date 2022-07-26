@@ -4,6 +4,7 @@ import style from "./index.module.css";
 
 export default ({ info }) => {
   const {
+    about,
     skills,
     projects,
     certificates,
@@ -13,6 +14,12 @@ export default ({ info }) => {
   } = info;
 
   const dataRepresentation = [
+    {
+      title: about.title,
+      path: about.path,
+      logo: about.logo,
+      explanation: () => `${about.explanation} ${about.years()}`,
+    },
     {
       title: skills.title,
       path: skills.path,

@@ -16,6 +16,11 @@ export default {
     path: "/",
     isNav: true,
     logo: "./img/logo/about.svg",
+    explanation: "Привет. Меня зовут Константин, комфортно - Костя. ",
+    years: () => {
+      const age = periodFrom(1985, 7, 27);
+      return `Мне ${age.fullYears}.`;
+    },
   },
   skills: {
     title: "Навыки",
