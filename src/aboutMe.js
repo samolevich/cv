@@ -1,3 +1,14 @@
+const periodFrom = (year, month = 0, day = 0) => {
+  const today = new Date();
+  let days = today.getDate() - day;
+  let months = today.getMonth() - month;
+  let fullYears = today.getFullYear() - year;
+  if (days < 0) months--;
+  if (months < 0) fullYears--;
+  if (months < 0) months += 12;
+  return { fullYears, months, days };
+};
+
 export default {
   title: "Javascript разработчик MERN",
   about: {
@@ -232,19 +243,16 @@ export default {
       explanation: `17 лет опыта работы связаны с торговлей. Начиная с 18 лет, работал в торговле B2B (телекоммуникационные услуги, банковские продукты и услуги, оптовая торговля алкоголем). Самое продолжительное время работы 4.5 года занимался продажей корпусной мебели физическим лицам.`,
     },
     timeSince: () => {
-      const ms = new Date().getTime() - new Date(2020, 7).getTime();
-      let months = Math.ceil(ms / 1000 / 60 / 60 / 24 / 30.4375);
-      const years = Math.floor(months / 12);
-      months %= 12;
-      const yearDeclension = years
-        ? years % 10 === 1 && years % 100 !== 11
-          ? `${years} года `
-          : `${years} лет `
+      const { fullYears, months } = periodFrom(2020, 6);
+      const yearDeclension = fullYears
+        ? fullYears % 10 === 1 && fullYears % 100 !== 11
+          ? `${fullYears} года`
+          : `${fullYears} лет`
         : "";
       const monthDeclension = months
         ? months === 1
-          ? `и ${months} месяцa. `
-          : `и ${months} месяцев. `
+          ? ` и ${months} месяцa`
+          : ` и ${months} месяцев`
         : "";
       return `В качестве разработчика более ${yearDeclension}${monthDeclension}. `;
     },
