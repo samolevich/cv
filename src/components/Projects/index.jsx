@@ -12,7 +12,7 @@ export default ({ projects: { title, logo, list } }) => {
   return (
     <div>
       <h2>
-        <img className={style.logo} src={logo} alt={title} /> {title}
+        <img className={style.logo} src={logo} alt={title} />{title}
       </h2>
       {
         list.map(project => (

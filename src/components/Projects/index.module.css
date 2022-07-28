@@ -1,6 +1,7 @@
 .logo {
   width: 42px;
-  vertical-align: bottom;
+  vertical-align: middle;
+  padding-right: 8px;
 }
 
 .project {

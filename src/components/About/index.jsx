@@ -12,7 +12,10 @@ export default ({ info }) => {
     futureVision,
     education,
   } = info;
-
+  const id = ((stp = 1) => {
+    let acc = 0;
+    return () => (acc += stp);
+  })(1);
   const dataRepresentation = [
     {
       title: about.title,
@@ -66,7 +69,7 @@ export default ({ info }) => {
         <>
           {expirience.relevant.title}
           <br />
-          {expirience.timeSince()}
+          {expirience.devExperience()}
           <br />
           <br />
           {expirience.nonRelevant.title}
@@ -99,7 +102,7 @@ export default ({ info }) => {
   ];
 
   const description = dataRepresentation.map(article => (
-    <>
+    <span key={id()}>
       <h2>
         <NavLink to={article.path}>
           <img className={style.logo} src={article.logo} alt={article.title} />
@@ -107,7 +110,7 @@ export default ({ info }) => {
         </NavLink>
       </h2>
       <p>{article.explanation()}</p>
-    </>
+    </span>
   ));
 
   return (

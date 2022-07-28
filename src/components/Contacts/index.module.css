@@ -5,12 +5,16 @@
 
 .logo {
   width: 28px;
-  vertical-align: bottom;
+  vertical-align: middle;
   padding: 8px;
 }
 
 .showformobile {
   display: none;
+}
+
+.block {
+  margin: 1em 0;
 }
 
 @media(max-width: 767px) {

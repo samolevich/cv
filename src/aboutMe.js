@@ -240,14 +240,14 @@ export default {
         "Система контроля версий - Git (Github). В основном через консоль.",
         "CSR App на React (Classes, Hooks), Redux (Thunk), JavaScript (ES6), CSS (flex, grid), SCSS, HTML.",
         "SSR App на NodeJS, Express JS, Handlebars, MongoDB, Mongoose.",
-        "Некоторый опыт D3.js, React-Bootstrap, Bootstrap, MaterialUI, Materialize, AntDesign.",
+        "Некоторый опыт React-Bootstrap, Bootstrap, MaterialUI, Materialize, D3.js, AntDesign.",
       ],
     },
     nonRelevant: {
       title: "Нерелевантный опыт",
       explanation: `17 лет опыта работы связаны с торговлей. Начиная с 18 лет, работал в торговле B2B (телекоммуникационные услуги, банковские продукты и услуги, оптовая торговля алкоголем). Самое продолжительное время работы 4.5 года занимался продажей корпусной мебели физическим лицам.`,
     },
-    timeSince: () => {
+    devExperience: () => {
       const { fullYears, months } = periodFrom(2020, 6);
       const yearDeclension = fullYears
         ? fullYears % 10 === 1 && fullYears % 100 !== 11
