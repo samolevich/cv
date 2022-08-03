@@ -89,6 +89,20 @@ export default {
         ],
       },
       {
+        title: "Star Wars API",
+        description: `Клвссическое приложение работы с API swapi.dev с использованием Bootswatch (Bootstrap like library). React JS, Bootswatch+Scss`,
+        links: [
+          {
+            name: "Основной репозиторий проекта",
+            url: "https://github.com/samolevich/starwarsapi/",
+          },
+          {
+            name: "Netlify Deployed Site",
+            url: "https://stwarsapi.netlify.app/",
+          },
+        ],
+      },
+      {
         title: "EventPlanner",
         description: `Командная реализация SSR-приложения. Добавить мероприятие, выбрать время, получить статистику.\nСтек: Node JS, Express JS, Handlebars, Mongo DB, Mongoose, BCrypt(lib), Javascript, HTML, CSS.`,
         links: [
