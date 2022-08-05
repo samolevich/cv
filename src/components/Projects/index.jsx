@@ -1,47 +1,45 @@
-import React from 'react';
-import style from './index.module.css';
+import React from "react";
+import style from "./index.module.css";
 
-export default ({ projects: { title, logo, list } }) => {
-
+export default ({ projects, lang }) => {
   const counter = (step = 1) => {
     let collector = 0;
-    return () => collector+= step;
-  }
+    return () => (collector += step);
+  };
   const inc = counter();
 
   return (
     <div>
       <h2>
-        <img className={style.logo} src={logo} alt={title} />{title}
+        <img
+          className={style.logo}
+          src={projects.logo}
+          alt={projects["title" + lang]}
+        />
+        {projects["title" + lang]}
       </h2>
-      {
-        list.map(project => (
-          <div className={style.project} key={`${project.title}${inc()}`}>
-            <h2>
-              <a href={project.title}
-                  target='_blank'
-                  rel='noopener noreferrer'
-              >
-                {project.title}
+      {projects.list.map(project => (
+        <div className={style.project} key={`${project.title}${inc()}`}>
+          <h2>
+            <a
+              href={project.links[0].url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {project.title}
+            </a>
+          </h2>
+          <p>{project["description" + lang]}</p>
+          {project.links.map(link => (
+            <span key={link.url}>
+              <a href={link.url} target="_blank" rel="noopener noreferrer">
+                {link.name}
               </a>
-            </h2>
-            <p>{project.description}</p>
-            {
-              project.links.map(link => (
-                <span key={link.url}>
-                  <a href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {link.name}
-                  </a>
-                  <br />
-                </span>
-              ))
-            }
-          </div>
-        ))
-      }
+              <br />
+            </span>
+          ))}
+        </div>
+      ))}
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import style from "./index.module.css";
 
-export default ({ info }) => {
+export default ({ info, lang }) => {
   const {
     about,
     skills,
@@ -12,37 +12,43 @@ export default ({ info }) => {
     futureVision,
     education,
   } = info;
+
   const id = ((stp = 1) => {
     let acc = 0;
     return () => (acc += stp);
   })(1);
+
   const dataRepresentation = [
     {
-      title: about.title,
+      title: about[`title` + lang],
       path: about.path,
       logo: about.logo,
-      explanation: () => `${about.explanation} ${about.years()}`,
+      explanation: () =>
+        `${about["explanation" + lang]} ${about["years" + lang]()}`,
     },
     {
-      title: skills.title,
+      title: skills[`title` + lang],
       path: skills.path,
       logo: skills.logo,
       explanation: () => skills.list.join(", "),
     },
     {
-      title: projects.title,
+      title: projects[`title` + lang],
       path: projects.path,
       logo: projects.logo,
       explanation: () => (
         <>
-          {projects.explanation}
+          {projects["explanation" + lang]}
           <br />
-          <NavLink to={projects.path}>{projects.title.toUpperCase()}</NavLink>.
+          <NavLink to={projects.path}>
+            {projects[`title` + lang].toUpperCase()}
+          </NavLink>
+          .
         </>
       ),
     },
     {
-      title: certificates.title,
+      title: certificates[`title` + lang],
       path: certificates.path,
       logo: certificates.logo,
       explanation: () => (
@@ -50,41 +56,41 @@ export default ({ info }) => {
           {certificates.list.map(school => {
             return school.certs.map(course => (
               <span key={course.name}>
-                {course.name} - {course.effort}.<br />
+                {course["name" + lang]} - {course["effort" + lang]}.<br />
               </span>
             ));
           })}
           <NavLink to={certificates.path}>
-            {certificates.title.toUpperCase()}
+            {certificates[`title` + lang].toUpperCase()}
           </NavLink>
           .
         </>
       ),
     },
     {
-      title: expirience.title,
+      title: expirience[`title` + lang],
       path: expirience.path,
       logo: expirience.logo,
       explanation: () => (
         <>
-          {expirience.relevant.title}
+          {expirience.relevant[`title` + lang]}
           <br />
-          {expirience.devExperience()}
+          {expirience["devExperience" + lang]()}
           <br />
           <br />
-          {expirience.nonRelevant.title}
+          {expirience.nonRelevant[`title` + lang]}
           <br />
-          {expirience.nonRelevant.explanation}
+          {expirience.nonRelevant["explanation" + lang]}
         </>
       ),
     },
     {
-      title: futureVision.title,
+      title: futureVision[`title` + lang],
       path: futureVision.path,
       logo: futureVision.logo,
       explanation: () => (
         <>
-          {futureVision.description.map(plan => (
+          {futureVision["description" + lang].map(plan => (
             <span key={plan}>
               {plan}
               <br />
@@ -94,10 +100,10 @@ export default ({ info }) => {
       ),
     },
     {
-      title: education.title,
+      title: education[`title` + lang],
       path: education.path,
       logo: education.logo,
-      explanation: () => education.description,
+      explanation: () => education["description" + lang],
     },
   ];
 
@@ -115,7 +121,7 @@ export default ({ info }) => {
 
   return (
     <div>
-      <h1>{info.title}</h1>
+      <h1>{info["title" + lang]}</h1>
 
       {description}
     </div>

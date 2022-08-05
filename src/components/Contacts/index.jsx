@@ -1,7 +1,9 @@
 import React from "react";
 import style from "./index.module.css";
 
-export default ({ title, logo, interactions, cv, code }) => {
+export default ({ contact, profile, lang }) => {
+  const { logo, interactions } = contact;
+  const { cv, code } = profile;
   const contacts = [interactions, code, cv];
 
   const id = ((stp = 1) => {
@@ -14,7 +16,7 @@ export default ({ title, logo, interactions, cv, code }) => {
       {each.map(contact => (
         <span key={contact.title}>
           <a className={style.contacts} href={contact.url}>
-            {contact.title}
+            {contact["title" + lang]}
           </a>
           <br />
         </span>
@@ -30,7 +32,7 @@ export default ({ title, logo, interactions, cv, code }) => {
           <a href={contact.url}>
             <img
               src={contact.iconForMobileVersion}
-              alt={contact.title}
+              alt={contact["title" + lang]}
               className={style.logo}
             />
           </a>
@@ -43,8 +45,12 @@ export default ({ title, logo, interactions, cv, code }) => {
     <>
       <div className={style.hiddenformobile}>
         <h2>
-          <img className={style.logo} src={logo} alt={title} />
-          {title}
+          <img
+            className={style.logo}
+            src={logo}
+            alt={contact["title" + lang]}
+          />
+          {contact["title" + lang]}
         </h2>
         <div>{desktopVersion}</div>
       </div>
