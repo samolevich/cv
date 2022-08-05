@@ -15,7 +15,10 @@ export default ({ info, lang }) => {
         path={info.about.path}
         component={() => <About info={info} lang={lang} />}
       />
-      <Route path={skills.path} component={() => <Skills skills={skills} />} />
+      <Route
+        path={skills.path}
+        component={() => <Skills skills={skills} lang={lang} />}
+      />
       <Route
         path={projects.path}
         component={() => <Projects projects={projects} lang={lang} />}
