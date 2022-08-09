@@ -404,6 +404,7 @@ export default {
         title: "Вотсап",
         title_en: "WhatsApp me",
         url: "https://wa.me/79263248737",
+        iconForMobileVersion: "./img/logo/whatsapp.svg",
       },
     ],
   },
