@@ -124,6 +124,23 @@ export default {
         ],
       },
       {
+        title: "Ant Design - RandomUser.me API",
+        description:
+          "Классическое приложение работы с API randomuser.me с использованием AntDesign, React JS, Redux. Сортировка, фильтры, пагинация.",
+        description_en:
+          "Classic application using API randomuser.me, AntDesign, React JS, Redux. Sorting, filters, pagination.",
+        links: [
+          {
+            name: "Netlify Deployed Site",
+            url: "https://randomuserstable.netlify.app/",
+          },
+          {
+            name: "Repository",
+            url: "https://github.com/samolevich/friendly-octo",
+          },
+        ],
+      },
+      {
         title: "EventPlanner",
         description:
           "Командная реализация SSR-приложения. Добавить мероприятие, выбрать время, получить статистику. Стек: Node JS, Express JS, Handlebars, Mongo DB, Mongoose, BCrypt(lib), Javascript, HTML, CSS.",
