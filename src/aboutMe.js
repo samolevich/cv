@@ -435,7 +435,7 @@ export default {
       {
         title: "HeadHunter CV",
         title_en: "HeadHunter CV",
-        url: "https://hh.ru/resume/6d6fcb45ff07ff00080039ed1f3056434d3175",
+        url: "https://hh.ru/applicant/resumes/view?resume=36a4ea03ff08213a590039ed1f4b7530533078",
       },
     ],
     code: [
