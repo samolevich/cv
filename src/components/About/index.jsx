@@ -23,8 +23,7 @@ export default ({ info, lang }) => {
       title: about[`title` + lang],
       path: about.path,
       logo: about.logo,
-      explanation: () =>
-        `${about["explanation" + lang]} ${about["years" + lang]()}`,
+      explanation: () => `${about["explanation" + lang]}`,
     },
     {
       title: skills[`title` + lang],
