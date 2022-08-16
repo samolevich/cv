@@ -107,7 +107,7 @@ export default ({ info, lang }) => {
   ];
 
   const description = dataRepresentation.map(article => (
-    <span key={id()}>
+    <section key={id()}>
       <h2>
         <NavLink to={article.path}>
           <img className={style.logo} src={article.logo} alt={article.title} />
@@ -115,13 +115,12 @@ export default ({ info, lang }) => {
         </NavLink>
       </h2>
       <p>{article.explanation()}</p>
-    </span>
+    </section>
   ));
 
   return (
     <div>
       <h1>{info["title" + lang]}</h1>
-
       {description}
     </div>
   );
