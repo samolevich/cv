@@ -16,10 +16,10 @@ export default () => {
     <div className={style.main}>
       <div></div>
       <div className={style.content}>
-        <div className={style.bar}>
+        <aside className={style.bar}>
           <Bar bar={aboutMe} lang={lang} />
-        </div>
-        <div className={style.info}>
+        </aside>
+        <main className={style.info}>
           <button
             type="submit"
             className={style.toggleLanguage}
@@ -28,7 +28,7 @@ export default () => {
             {lang === "" ? "EN" : "РУ "}
           </button>
           <Info info={aboutMe} lang={lang} />
-        </div>
+        </main>
       </div>
       <div></div>
     </div>
