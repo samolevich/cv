@@ -19,7 +19,7 @@ export default ({ projects, lang }) => {
         {projects["title" + lang]}
       </h2>
       {projects.list.map(project => (
-        <div className={style.project} key={`${project.title}${inc()}`}>
+        <article className={style.project} key={`${project.title}${inc()}`}>
           <h2>
             <a
               href={project.links[0].url}
@@ -38,7 +38,7 @@ export default ({ projects, lang }) => {
               <br />
             </span>
           ))}
-        </div>
+        </article>
       ))}
     </div>
   );
