@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import style from "./index.module.css";
 
 export default () => {
-  const [photo, setPhoto] = useState("img/wink.svg");
+  const [photo, setPhoto] = useState("./img/wink.svg");
 
   useEffect(() => {
     setTimeout(() => {
