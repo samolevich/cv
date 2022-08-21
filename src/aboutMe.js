@@ -371,7 +371,7 @@ export default {
   },
   futureVision: {
     title: "Планы",
-    title_en: "Goals",
+    title_en: "My plans",
     logo: "./img/logo/future.svg",
     path: "/",
     description: [
