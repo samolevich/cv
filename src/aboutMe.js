@@ -19,7 +19,7 @@ export default {
     isNav: true,
     logo: "./img/logo/about.svg",
     explanation:
-      "Привет. Меня зовут Константин, комфортно - Костя. Я javascript разработчик.",
+      "Привет. Я - Костя. Javascript разработчик.",
     explanation_en: `Hi. My name is Kostya. I'm javascript developer. Mostly ReactJS.`,
     years: () => {
       const age = periodFrom(1985, 7, 27);
