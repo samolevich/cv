@@ -18,8 +18,7 @@ export default {
     path: "/",
     isNav: true,
     logo: "./img/logo/about.svg",
-    explanation:
-      "Привет. Я - Костя. Javascript разработчик.",
+    explanation: "Привет. Я - Костя. Javascript разработчик.",
     explanation_en: `Hi. My name is Kostya. I'm javascript developer. Mostly ReactJS.`,
     years: () => {
       const age = periodFrom(1985, 7, 27);
@@ -399,12 +398,12 @@ export default {
     title_en: "Contacts",
     logo: "./img/logo/contacts.svg",
     interactions: [
-      {
-        title: "+7926 324 8737",
-        title_en: "Call me",
-        url: "tel:+79263248737",
-        iconForMobileVersion: "./img/logo/call.svg",
-      },
+      // {
+      //   title: "+7926 324 8737",
+      //   title_en: "Call me",
+      //   url: "tel:+79263248737",
+      //   iconForMobileVersion: "./img/logo/call.svg",
+      // },
       {
         title: "Эл.почта",
         title_en: "E-mail me",
@@ -458,8 +457,8 @@ export default {
     ],
   },
   location: {
-    title: "Москва",
-    title_en: "Moscow, Russia",
+    title: "",
+    title_en: "",
     logo: "./img/logo/location.svg",
   },
 };
