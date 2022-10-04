@@ -457,8 +457,8 @@ export default {
     ],
   },
   location: {
-    title: "",
-    title_en: "",
+    title: "СНГ",
+    title_en: "CIS",
     logo: "./img/logo/location.svg",
   },
 };
