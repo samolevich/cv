@@ -1,15 +1,10 @@
-@font-face {
-  font-family: Din;
-  src: url(/cv/font/DINPro.ttf);
-}
-
 :root {
   --light-blue: #25c1e8;
   --dark-blue: #4e7093;
   --gray-blue: #668097;
   --light-yellow: #ffdb94;
   --pastel-pink: #f59297;
-  font-family: Din, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--dark-blue);
   font-weight: bolder;
   font-size: 16px;
