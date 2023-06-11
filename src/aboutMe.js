@@ -503,8 +503,8 @@ export default {
     ],
   },
   location: {
-    title: "СНГ",
-    title_en: "CIS",
+    title: "Москва",
+    title_en: "Moscow",
     logo: "./img/logo/location.svg",
   },
 };
