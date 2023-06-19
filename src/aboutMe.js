@@ -444,12 +444,12 @@ export default {
     title_en: "Contacts",
     logo: "./img/logo/contacts.svg",
     interactions: [
-      // {
-      //   title: "+7926 324 8737",
-      //   title_en: "Call me",
-      //   url: "tel:+79263248737",
-      //   iconForMobileVersion: "./img/logo/call.svg",
-      // },
+      {
+        title: "+7926 324 8737",
+        title_en: "Call me",
+        url: "tel:+79263248737",
+        iconForMobileVersion: "./img/logo/call.svg",
+      },
       {
         title: "Эл.почта",
         title_en: "E-mail me",
