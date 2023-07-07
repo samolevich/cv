@@ -247,6 +247,20 @@ export default {
         ],
       },
       {
+        description: "Онлайн курсы на Coursera",
+        description_en: "Coursera Online Courses",
+        certs: [
+          {
+            name: "Сертификат Programming with JavaScript от Meta",
+            name_en: "Programming with JavaScript certificate by Meta",
+            url: "https://coursera.org/share/e080b3134ed2c8dc87f8745a38391947",
+            pathLocal: "./img/cert/Coursera Programming with JavaScript.jpeg",
+            effort: "более 42 часов разработки",
+            effort_en: "approximately 42 hours of coursework",
+          },
+        ],
+      },
+      {
         description: "Онлайн курс JavaScript от Free Code Camp",
         description_en: "Free Code Camp JavaScript Online Course",
         certs: [
