@@ -258,6 +258,14 @@ export default {
             effort: "более 42 часов разработки",
             effort_en: "approximately 42 hours of coursework",
           },
+          {
+            name: "Сертификат HTML and CSS in depth от Meta",
+            name_en: "HTML and CSS in depth certificate by Meta",
+            url: "https://coursera.org/share/82a90f5c958dc217849ae0c3f0b1feb6",
+            pathLocal: "./img/cert/Coursera HTML and CSS in depth.jpeg",
+            effort: "более 21 часов разработки",
+            effort_en: "approximately 21 hours of coursework",
+          },
         ],
       },
       {
