@@ -266,6 +266,14 @@ export default {
             effort: "более 21 часов разработки",
             effort_en: "approximately 21 hours of coursework",
           },
+          {
+            name: "Сертификат Principles of UX/UI Design от Meta",
+            name_en: "Principles of UX/UI Design certificate by Meta",
+            url: "https://coursera.org/share/9e7096cff81092050fab43af394c1f92",
+            pathLocal: "./img/cert/Coursera Principles of UXUI Design.jpeg",
+            effort: "более 21 часов разработки",
+            effort_en: "approximately 21 hours of coursework",
+          },
         ],
       },
       {
