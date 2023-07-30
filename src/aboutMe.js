@@ -274,6 +274,14 @@ export default {
             effort: "более 21 часов разработки",
             effort_en: "approximately 21 hours of coursework",
           },
+          {
+            name: "Сертификат Advanced Styling with Responsive Design от University of Michigan",
+            name_en: "Advanced Styling with Responsive Design certificate by University of Michigan",
+            url: "https://coursera.org/share/b93adc750cda0d958b719addad07e677",
+            pathLocal: "./img/cert/Coursera Advanced Styling with Responsive Design.jpeg",
+            effort: "более 12 часов разработки",
+            effort_en: "approximately 12 hours of coursework",
+          },
         ],
       },
       {
