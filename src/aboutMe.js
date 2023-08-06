@@ -282,6 +282,14 @@ export default {
             effort: "более 12 часов разработки",
             effort_en: "approximately 12 hours of coursework",
           },
+          {
+            name: "Сертификат Interactivity with JavaScript от University of Michigan",
+            name_en: "Interactivity with JavaScript certificate by University of Michigan",
+            url: "https://coursera.org/share/3882b5b4e1ea53a67101cc0209dfa17a",
+            pathLocal: "./img/cert/Coursera Interactivity with JavaScript.jpeg",
+            effort: "более 9 часов разработки",
+            effort_en: "approximately 9 hours of coursework",
+          },
         ],
       },
       {
